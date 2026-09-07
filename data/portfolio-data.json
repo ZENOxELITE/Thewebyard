@@ -1,0 +1,357 @@
+
+{
+  "meta": {
+    "siteTitle": "The Web Yard | Websites, Web Apps & Digital Solutions for Businesses",
+    "siteDescription": "The Web Yard builds professional websites, custom web applications, Shopify stores, Streamlit dashboards, AI automation systems, and digital solutions for businesses across Pakistan.",
+    "siteUrl": "https://buildwithmuneer.online",
+"ogImage": "/og-image.jpg",
+    "keywords": [
+      "web development Pakistan",
+      "website development",
+      "web application development",
+      "Shopify store development",
+      "Streamlit development",
+      "React development",
+      "Next.js development",
+      "Django development",
+      "AI automation",
+      "SEO services",
+      "website maintenance"
+    ],
+    "locale": "en_PK",
+    "twitterHandle": ""
+  },
+  "profile": {
+    "name": "The Web Yard",
+    "title": "Web Development & Digital Solutions Agency",
+    "tagline": "We make your business easy to find online.",
+    "description": "The Web Yard is a Pakistan-based digital team building websites, web applications, Shopify stores, Streamlit solutions, and automation systems. We keep the process straightforward and focus on creating practical digital solutions that fit each business.",
+    "ctaText": "Get a Quote on WhatsApp",
+    "ctaUrl": "https://wa.me/923398867672?text=Hi%2C%20I%20would%20like%20to%20get%20a%20quote",
+    "avatar": "/logo.jpeg",
+    "stats": [
+      {
+        "value": "15+",
+        "label": "Clients Served"
+      },
+      {
+        "value": "12+",
+        "label": "Projects Completed"
+      },
+      {
+        "value": "4+",
+        "label": "Years of Experience"
+      },
+      {
+        "value": "4",
+        "label": "Team Members"
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "website-development",
+      "title": "Website Development",
+      "description": "We design and build modern, responsive websites that help businesses establish a professional and credible online presence.",
+      "icon": "layout",
+      "features": [
+        "Business websites",
+        "Portfolio websites",
+        "Landing pages",
+        "Responsive design"
+      ]
+    },
+    {
+      "id": "web-app-development",
+      "title": "Web Application Development",
+      "description": "We build custom web applications and business tools designed around your workflow, requirements, and users.",
+      "icon": "code",
+      "features": [
+        "Custom web applications",
+        "Business dashboards",
+        "Streamlit applications",
+        "Backend development"
+      ]
+    },
+    {
+      "id": "shopify-development",
+      "title": "Shopify Store Development",
+      "description": "We create professional Shopify stores that are easy to manage and designed to provide a smooth shopping experience.",
+      "icon": "shopping-cart",
+      "features": [
+        "Shopify store setup",
+        "Theme customization",
+        "Product store setup",
+        "Store optimization"
+      ]
+    },
+    {
+      "id": "ai-automation",
+      "title": "AI Automation",
+      "description": "We help businesses reduce repetitive work by building practical automation and AI-powered workflows around their processes.",
+      "icon": "zap",
+      "features": [
+        "Workflow automation",
+        "AI-powered solutions",
+        "Process optimization",
+        "Custom integrations"
+      ]
+    },
+    {
+      "id": "seo-maintenance",
+      "title": "SEO & Website Maintenance",
+      "description": "We help businesses keep their websites updated, maintained, and better prepared for search visibility.",
+      "icon": "search",
+      "features": [
+        "Basic SEO improvements",
+        "Website updates",
+        "Bug fixes",
+        "Ongoing maintenance"
+      ]
+    }
+  ],
+  "expertise": [
+    {
+      "category": "Our Technology Stack",
+      "platforms": [
+        {
+          "name": "React",
+          "logo": "react",
+          "url": "https://react.dev"
+        },
+        {
+          "name": "Next.js",
+          "logo": "nextjs",
+          "url": "https://nextjs.org"
+        },
+        {
+          "name": "Python",
+          "logo": "python",
+          "url": "https://www.python.org"
+        },
+        {
+          "name": "Django",
+          "logo": "django",
+          "url": "https://www.djangoproject.com"
+        },
+        {
+          "name": "Streamlit",
+          "logo": "streamlit",
+          "url": "https://streamlit.io"
+        },
+        {
+          "name": "Shopify",
+          "logo": "shopify",
+          "url": "https://www.shopify.com"
+        },
+        {
+          "name": "TypeScript",
+          "logo": "typescript",
+          "url": "https://www.typescriptlang.org"
+        },
+        {
+          "name": "Node.js",
+          "logo": "nodejs",
+          "url": "https://nodejs.org"
+        },
+        {
+          "name": "Docker",
+          "logo": "docker",
+          "url": "https://www.docker.com"
+        }
+      ]
+    }
+  ],
+  "crmTools": [
+    {
+      "name": "React",
+      "category": "Frontend",
+      "description": "Component-based user interfaces",
+      "badge": null
+    },
+    {
+      "name": "Next.js",
+      "category": "Full-Stack Web",
+      "description": "Modern production-ready web applications",
+      "badge": null
+    },
+    {
+      "name": "Python",
+      "category": "Backend",
+      "description": "Reliable backend logic and custom solutions",
+      "badge": null
+    },
+    {
+      "name": "Django",
+      "category": "Web Framework",
+      "description": "Scalable web applications and backend systems",
+      "badge": null
+    },
+    {
+      "name": "Streamlit",
+      "category": "Data & Apps",
+      "description": "Interactive dashboards and internal tools",
+      "badge": null
+    },
+    {
+      "name": "Shopify",
+      "category": "E-commerce",
+      "description": "Professional online stores for businesses",
+      "badge": null
+    }
+  ],
+  "projects": [],
+  "blogPosts": [],
+  "background": {
+    "experience": [
+      {
+        "title": "The Web Yard Established",
+        "company": "The Web Yard",
+        "period": "2022",
+        "description": "The Web Yard began with a focus on helping businesses build a stronger and more professional presence online."
+      },
+      {
+        "title": "Growing Our Digital Services",
+        "company": "The Web Yard",
+        "period": "2023 - 2025",
+        "description": "Our work expanded across websites, web applications, e-commerce solutions, dashboards, and custom digital tools."
+      },
+      {
+        "title": "Building Digital Solutions",
+        "company": "The Web Yard",
+        "period": "2026 - Present",
+        "description": "Today, our team continues to build practical digital solutions for businesses across Pakistan."
+      }
+    ],
+    "education": [
+  {
+    "degree": "Web Development & Modern Technologies",
+    "institution": "The Web Yard",
+    "period": "Continuous Learning",
+    "description": "Our team continuously develops skills in modern web technologies, responsive design, and digital solutions to deliver reliable products for businesses."
+  },
+  {
+    "degree": "Software Engineering & Application Development",
+    "institution": "The Web Yard",
+    "period": "Continuous Learning",
+    "description": "Focused on building scalable web applications using modern frontend and backend technologies, databases, APIs, and cloud-ready development practices."
+  },
+  {
+    "degree": "Emerging Technologies & AI",
+    "institution": "The Web Yard",
+    "period": "Ongoing",
+    "description": "We actively explore AI automation, modern development tools, and emerging technologies to help businesses improve their digital operations."
+  }
+]
+  },
+  "workPhilosophy": [
+    {
+      "title": "Build for Real Business Needs",
+      "description": "We focus on understanding what a business actually needs before building. The goal is not to add unnecessary features, but to create something useful and practical."
+    },
+    {
+      "title": "Clear Communication",
+      "description": "We believe clients should understand what is being built, why it is being built, and what they can expect throughout the project."
+    },
+    {
+      "title": "Quality That Lasts",
+      "description": "We aim to build clean, reliable digital solutions that can continue supporting a business beyond the day they are launched."
+    }
+  ],
+  "noCodeTools": [
+    {
+      "name": "Shopify",
+      "category": "E-commerce"
+    },
+    {
+      "name": "Streamlit",
+      "category": "Dashboards & Apps"
+    },
+    {
+      "name": "React",
+      "category": "Websites & Interfaces"
+    },
+    {
+      "name": "Next.js",
+      "category": "Web Applications"
+    },
+    {
+      "name": "Django",
+      "category": "Backend & Web Apps"
+    }
+  ],
+  "vibeCodingTools": [
+    {
+      "name": "React",
+      "category": "Frontend"
+    },
+    {
+      "name": "Next.js",
+      "category": "Full-Stack Web"
+    },
+    {
+      "name": "TypeScript",
+      "category": "Development"
+    },
+    {
+      "name": "Node.js",
+      "category": "Backend"
+    },
+    {
+      "name": "Docker",
+      "category": "Deployment"
+    }
+  ],
+  "automationTools": [
+    {
+      "name": "AI Workflows",
+      "category": "Automation"
+    },
+    {
+      "name": "Custom Integrations",
+      "category": "Automation"
+    },
+    {
+      "name": "Process Automation",
+      "category": "Business Operations"
+    },
+    {
+      "name": "Streamlit",
+      "category": "Internal Tools"
+    }
+  ],
+  "testimonials": [],
+  "targetRegions": [
+    "Pakistan"
+  ],
+  "contact": {
+    "email": "thewebyard.online@gmail.com",
+    "calendly": "",
+    "linkedin": "",
+    "twitter": "",
+    "whatsapp": "03398867672",
+    "whatsappUrl": "https://wa.me/923398867672?text=Hi%2C%20I%20would%20like%20to%20get%20a%20quote"
+  },
+  "faq": [
+    {
+      "question": "What services does The Web Yard offer?",
+      "answer": "We build business websites, custom web applications, Shopify stores, Streamlit applications and dashboards. We also offer AI automation, SEO improvements, and website maintenance."
+    },
+    {
+      "question": "Who do you work with?",
+      "answer": "We work with businesses and individuals across Pakistan who need a professional website, e-commerce store, custom web application, or other digital solution."
+    },
+    {
+      "question": "How do I get a quote for my project?",
+      "answer": "You can contact us on WhatsApp and tell us about your project. After understanding your requirements, we will discuss the scope and provide a custom quote."
+    },
+    {
+      "question": "How long does a project usually take?",
+      "answer": "The timeline depends on the type and complexity of the project. Smaller websites can take less time, while custom web applications and larger systems may require a longer development process."
+    },
+    {
+      "question": "Do you offer support after a website is launched?",
+      "answer": "Yes. We can provide website maintenance, updates, bug fixes, and other support based on your project's requirements."
+    }
+  ]
+}

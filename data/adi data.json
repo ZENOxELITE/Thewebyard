@@ -1,0 +1,420 @@
+{
+  "meta": {
+    "siteTitle": "The web yard | We create websites, web apps, and automation systems for businesses.",
+    "siteDescription": "Expert CRM consulting, no-code development, automation, and GTM strategy for growing businesses. 200+ clients served with 100% 5-star reviews since 2016.",
+    "siteUrl": "https://amitsarda.xyz",
+    "ogImage": "/og-image.jpg",
+    "keywords": [
+      "CRM consultant",
+      "no-code development",
+      "business automation",
+      "GTM consulting",
+      "Pipedrive expert",
+      "HubSpot consultant",
+      "Zapier automation",
+      "business systems",
+      "sales automation",
+      "workflow automation"
+    ],
+    "locale": "en_US",
+    "twitterHandle": "@amitsarda"
+  },
+  "profile": {
+    "name": "The Web Yard",
+    "title": "Business Consultant & Systems Designer",
+    "tagline": "I help founders grow their sales by building scalable systems using SaaS, No-code, and Automation.",
+    "description": "A solo consultant who partners with decision-makers to build systems that make businesses run like a dream. No boardrooms, no delays — just fast, impactful solutions.",
+    "ctaText": "Book a Discovery Call",
+    "ctaUrl": "https://cal.com/amitsarda",
+    "avatar": "/avatar.jpg",
+    "stats": [
+      {
+        "value": "200+",
+        "label": "Clients Served"
+      },
+      {
+        "value": "300+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "100%",
+        "label": "5-Star Reviews"
+      },
+      {
+        "value": "Since 2016",
+        "label": "In Business"
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "crm-consulting",
+      "title": "CRM Consulting",
+      "description": "Select, implement, and optimize the perfect CRM for your business. From Pipedrive to HubSpot, I help you build sales pipelines that convert.",
+      "icon": "database",
+      "features": [
+        "CRM selection & implementation",
+        "Pipeline optimization",
+        "Team training & onboarding",
+        "Data migration & cleanup"
+      ]
+    },
+    {
+      "id": "nocode-development",
+      "title": "No-Code Development",
+      "description": "Build powerful web apps, internal tools, and customer portals without traditional coding. Ship faster, iterate quicker.",
+      "icon": "code",
+      "features": [
+        "Web app development",
+        "Internal tools & dashboards",
+        "Customer portals",
+        "Database design"
+      ]
+    },
+    {
+      "id": "vibe-coding",
+      "title": "Vibe Coding Development",
+      "description": "Leverage AI-powered development tools like v0, Cursor, and Lovable to build production-ready applications at unprecedented speed.",
+      "icon": "sparkles",
+      "features": [
+        "AI-assisted development",
+        "Rapid prototyping",
+        "Full-stack applications",
+        "Modern UI/UX"
+      ]
+    },
+    {
+      "id": "automation",
+      "title": "Automation Consulting",
+      "description": "Eliminate repetitive tasks and connect your tools. Build workflows that save hours every week and reduce human error.",
+      "icon": "zap",
+      "features": [
+        "Workflow automation",
+        "Tool integrations",
+        "Data synchronization",
+        "Process optimization"
+      ]
+    },
+    {
+      "id": "gtm-consulting",
+      "title": "GTM Consulting",
+      "description": "Launch products and enter markets with a solid go-to-market strategy. From positioning to sales enablement, I've got you covered.",
+      "icon": "rocket",
+      "features": [
+        "Market positioning",
+        "Sales enablement",
+        "Lead generation systems",
+        "Growth strategy"
+      ]
+    }
+  ],
+  "expertise": [
+    {
+      "category": "Certified Expert",
+      "platforms": [
+        {
+          "name": "Glide",
+          "logo": "glide",
+          "url": "https://glideapps.com"
+        },
+        {
+          "name": "Clay",
+          "logo": "clay",
+          "url": "https://clay.com"
+        },
+        {
+          "name": "Zapier",
+          "logo": "zapier",
+          "url": "https://zapier.com"
+        },
+        {
+          "name": "Relay.app",
+          "logo": "relay",
+          "url": "https://relay.app"
+        },
+        {
+          "name": "Noloco",
+          "logo": "noloco",
+          "url": "https://noloco.io"
+        },
+        {
+          "name": "JustCall",
+          "logo": "justcall",
+          "url": "https://justcall.io"
+        },
+        {
+          "name": "Typeform",
+          "logo": "typeform",
+          "url": "https://typeform.com"
+        }
+      ]
+    }
+  ],
+  "crmTools": [
+    {
+      "name": "Pipedrive",
+      "category": "Sales CRM",
+      "description": "Visual Pipeline, Deal Tracking, Activity Reminders",
+      "badge": "Extended Trial"
+    },
+    {
+      "name": "Folk",
+      "category": "Relationship CRM",
+      "description": "WhatsApp Sync, Chrome Extensions, Contact Enrichment",
+      "badge": null
+    },
+    {
+      "name": "Close",
+      "category": "Sales CRM",
+      "description": "Built-in VoIP, Calling & SMS",
+      "badge": null
+    },
+    {
+      "name": "HubSpot",
+      "category": "All-in-One",
+      "description": "Free CRM, Marketing Hub, Sales Automation",
+      "badge": "Free Tier"
+    },
+    {
+      "name": "Attio",
+      "category": "Modern CRM",
+      "description": "Custom Objects, Contact Enrichment",
+      "badge": "10% OFF"
+    },
+    {
+      "name": "Breakcold",
+      "category": "Social CRM",
+      "description": "Social Selling, LinkedIn & Twitter CRM",
+      "badge": null
+    }
+  ],
+  "projects": [
+    {
+      "id": "altdirectory",
+      "title": "AltDirectory",
+      "description": "B2B alternatives to 500+ SaaS tools. A comprehensive directory helping businesses find the right software solutions.",
+      "category": "B2B",
+      "tech": "v0",
+      "url": "https://altdirectory.co"
+    },
+    {
+      "id": "comparecosts",
+      "title": "CompareCosts",
+      "description": "Helping consumers make informed purchase decisions through price comparisons and product insights.",
+      "category": "B2C",
+      "tech": "v0",
+      "url": "https://comparecosts.co"
+    },
+    {
+      "id": "d2c",
+      "title": "D2C Shark Tank India",
+      "description": "Directory of D2C brands featured on Shark Tank India, helping consumers discover innovative products.",
+      "category": "B2C",
+      "tech": "Cursor",
+      "url": "https://d2c.amitsarda.xyz"
+    },
+    {
+      "id": "crmtools",
+      "title": "CRM Tools",
+      "description": "Comprehensive resource to help businesses select the perfect CRM for their needs.",
+      "category": "B2B",
+      "tech": "Bolt",
+      "url": "https://crmtools.co"
+    }
+  ],
+  "blogPosts": [
+    {
+      "title": "The CRM Landscape",
+      "category": "CRM",
+      "url": "/blog/crm-landscape"
+    },
+    {
+      "title": "No-Code Landscape",
+      "category": "No-Code",
+      "url": "/blog/nocode-landscape"
+    },
+    {
+      "title": "How to Choose a CRM",
+      "category": "CRM",
+      "url": "/blog/how-to-choose-crm"
+    },
+    {
+      "title": "Pipedrive Plugins Guide",
+      "category": "Pipedrive",
+      "url": "/blog/pipedrive-plugins"
+    }
+  ],
+  "background": {
+    "experience": [
+      {
+        "title": "Freelance Business Consultant",
+        "company": "Self-Employed",
+        "period": "2016 - Present",
+        "description": "Helping founders build scalable systems"
+      },
+      {
+        "title": "Business Consultant",
+        "company": "ZS Associates",
+        "period": "2013 - 2016",
+        "description": "Strategy consulting for Fortune 500 clients"
+      },
+      {
+        "title": "Software Engineer",
+        "company": "Cisco Systems",
+        "period": "2008 - 2011",
+        "description": "Full-stack development & network solutions"
+      }
+    ],
+    "education": [
+      {
+        "degree": "PGDM/MBA",
+        "institution": "SPJIMR, Mumbai",
+        "period": "2011 - 2013"
+      },
+      {
+        "degree": "Exchange Program",
+        "institution": "Smith School of Business, UMD",
+        "period": "Fall 2012"
+      },
+      {
+        "degree": "B.E. Computer Science",
+        "institution": "Pune University",
+        "period": "2004 - 2008"
+      }
+    ]
+  },
+  "workPhilosophy": [
+    {
+      "title": "I Choose Projects That Excite Me",
+      "description": "I'm selective about my work. I take on projects where I can bring serious value while genuinely enjoying the process. My focus is on setting up systems and automating processes — building engines, not driving them long-term."
+    },
+    {
+      "title": "Straight-Up Transparency",
+      "description": "If a project isn't my thing, I'll tell you upfront and connect you with someone in my network who's the perfect fit. I'm the matchmaker of business solutions — creating win-win moments."
+    },
+    {
+      "title": "Quality Over Quantity",
+      "description": "Higher rates mean I can focus on fewer, high-quality projects with 100% energy and expertise. You take care of me, I'll take care of your business."
+    }
+  ],
+  "noCodeTools": [
+    {
+      "name": "Webflow",
+      "category": "Websites"
+    },
+    {
+      "name": "Framer",
+      "category": "Websites"
+    },
+    {
+      "name": "Bubble",
+      "category": "Web Apps"
+    },
+    {
+      "name": "Glide",
+      "category": "Web Apps"
+    },
+    {
+      "name": "Noloco",
+      "category": "Web Apps"
+    }
+  ],
+  "vibeCodingTools": [
+    {
+      "name": "v0",
+      "category": "Web"
+    },
+    {
+      "name": "Cursor",
+      "category": "IDE"
+    },
+    {
+      "name": "Lovable",
+      "category": "Web"
+    },
+    {
+      "name": "Bolt",
+      "category": "Web"
+    },
+    {
+      "name": "Base44",
+      "category": "Web & Mobile"
+    }
+  ],
+  "automationTools": [
+    {
+      "name": "Make",
+      "category": "Automation"
+    },
+    {
+      "name": "Zapier",
+      "category": "Automation"
+    },
+    {
+      "name": "n8n",
+      "category": "Automation"
+    },
+    {
+      "name": "Relay.app",
+      "category": "Automation"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Amit transformed our sales process completely. His CRM implementation saved us 20+ hours per week.",
+      "author": "Sarah M.",
+      "title": "CEO, Tech Startup",
+      "location": "San Francisco, USA"
+    },
+    {
+      "quote": "The automation workflows Amit built have been game-changing for our operations. Highly recommended.",
+      "author": "James K.",
+      "title": "Founder, E-commerce Brand",
+      "location": "London, UK"
+    },
+    {
+      "quote": "Working with Amit was seamless. He understood our needs immediately and delivered beyond expectations.",
+      "author": "Marie L.",
+      "title": "Operations Director",
+      "location": "Paris, France"
+    }
+  ],
+  "targetRegions": [
+    "United States",
+    "Canada",
+    "United Kingdom",
+    "European Union",
+    "Australia",
+    "New Zealand",
+    "Singapore",
+    "France"
+  ],
+  "contact": {
+    "email": "hello@amitsarda.xyz",
+    "calendly": "https://cal.com/amitsarda",
+    "linkedin": "https://linkedin.com/in/amitsarda",
+    "twitter": "https://twitter.com/amitsarda"
+  },
+  "faq": [
+    {
+      "question": "What types of businesses do you work with?",
+      "answer": "I work primarily with SMBs and startups across the US, Canada, EU, UK, Australia, New Zealand, Singapore, and France. My sweet spot is founders and decision-makers who can move fast without corporate red tape."
+    },
+    {
+      "question": "How do you typically engage with clients?",
+      "answer": "Most projects start with a discovery call to understand your needs. From there, I provide a proposal with clear scope, timeline, and pricing. I work on a project basis, not hourly, so you know exactly what you're getting."
+    },
+    {
+      "question": "What's your typical project timeline?",
+      "answer": "Most CRM implementations take 2-4 weeks. Automation projects vary from 1-6 weeks depending on complexity. No-code app development typically takes 4-8 weeks for a full MVP."
+    },
+    {
+      "question": "Do you offer ongoing support?",
+      "answer": "I focus on building systems, not managing them long-term. However, I do offer training and documentation to ensure your team can maintain what I build. For ongoing needs, I can recommend partners from my network."
+    },
+    {
+      "question": "What makes you different from other consultants?",
+      "answer": "I combine technical expertise (former software engineer at Cisco) with business acumen (MBA + consulting at ZS Associates). I'm certified across multiple platforms and have maintained 100% 5-star reviews across 200+ clients since 2016."
+    }
+  ]
+}
