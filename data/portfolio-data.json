@@ -200,8 +200,92 @@
       "badge": null
     }
   ],
-  "projects": [],
-  "blogPosts": [],
+  "projects": [
+  {
+    "id": "crown-properties",
+    "title": "Crown Properties",
+    "description": "A professional real estate website featuring property listings, detailed property pages, company information, services, and contact functionality.",
+    "category": "Real Estate Web Development",
+    "tech": "React, TypeScript, React Router, Supabase",
+    "url": "https://crownproperties.vercel.app/"
+  },
+  {
+    "id": "fort-gym",
+    "title": "FORT Gym",
+    "description": "A premium fitness club website presenting memberships, training facilities, coaches, recovery services, spa amenities, and customer testimonials.",
+    "category": "Fitness Web Development",
+    "tech": "React and typescript framework",
+    "url": "https://fort-beta.vercel.app/"
+  },
+  {
+    "id": "atlas-gym",
+    "title": "Atlas Gym",
+    "description": "A modern gym website showcasing fitness facilities, membership plans, professional coaches, recovery experiences, testimonials, and location details.",
+    "category": "Fitness Web Development",
+    "tech": "React, TypeScript and Lucide React",
+    "url": "https://atlasgym-delta.vercel.app/"
+  },
+  {
+    "id": "aura-salon-and-spa",
+    "title": "Aura Salon & Spa",
+    "description": "An elegant salon and spa website featuring beauty services, pricing, team profiles, gallery sections, testimonials, booking, FAQs, and contact information.",
+    "category": "Beauty & Wellness Web Development",
+    "tech": "Framer Motion",
+    "url": "https://aura-salonandspa.vercel.app/"
+  },
+  {
+    "id": "the-formula-lab",
+    "title": "The Formula Lab",
+    "description": "A full-featured e-commerce website for browsing products, viewing product details, managing a shopping cart, and administering products and users.",
+    "category": "E-commerce Web Development",
+    "tech": "React Query and v0",
+    "url": "https://www.theformulalab.store/"
+  }
+]
+  ,
+  "blogPosts": [
+  {
+    "title": "How to Choose the Right Type of Website for Your Business",
+    "category": "Website Development",
+    "url": "/blog/choosing-right-website-type"
+  },
+  {
+    "title": "Website vs Web Application: What's the Difference and Which Do You Need?",
+    "category": "Web Application Development",
+    "url": "/blog/website-vs-web-application"
+  },
+  {
+    "title": "A Complete Guide to Starting a Shopify Store in Pakistan",
+    "category": "Shopify Development",
+    "url": "/blog/shopify-store-guide-pakistan"
+  },
+  {
+    "title": "5 Ways AI Automation Can Save Your Business Hours Every Week",
+    "category": "AI Automation",
+    "url": "/blog/ai-automation-save-time"
+  },
+  {
+    "title": "SEO Basics Every Small Business Website Needs",
+    "category": "SEO & Maintenance",
+    "url": "/blog/seo-basics-small-business"
+  },
+  {
+    "title": "Streamlit vs Traditional Dashboards: Which Is Right for You?",
+    "category": "Web Application Development",
+    "url": "/blog/streamlit-vs-traditional-dashboards"
+  },
+  {
+    "title": "Why Website Maintenance Matters After Launch",
+    "category": "SEO & Maintenance",
+    "url": "/blog/website-maintenance-matters"
+  },
+  {
+    "title": "Django vs Next.js: Choosing the Right Backend for Your Project",
+    "category": "Web Application Development",
+    "url": "/blog/django-vs-nextjs"
+  }
+
+  ],
   "background": {
     "experience": [
       {
