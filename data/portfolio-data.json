@@ -1,31 +1,34 @@
-
 {
   "meta": {
-    "siteTitle": "The Web Yard | Websites, Web Apps & Digital Solutions for Businesses",
-    "siteDescription": "The Web Yard builds professional websites, custom web applications, Shopify stores, Streamlit dashboards, AI automation systems, and digital solutions for businesses across Pakistan.",
+    "siteTitle": "Orvexa Systems | Web Development & Digital Solutions in Pakistan",
+    "siteDescription": "Orvexa Systems builds modern websites, custom web applications, Shopify stores, Streamlit dashboards, AI automation systems, and digital solutions for businesses across Pakistan.",
     "siteUrl": "https://buildwithmuneer.online",
-"ogImage": "/og-image.jpg",
+    "ogImage": "/og-image.jpg",
     "keywords": [
+      "Orvexa Systems",
+      "Orvexa Systems Pakistan",
       "web development Pakistan",
-      "website development",
-      "web application development",
-      "Shopify store development",
-      "Streamlit development",
-      "React development",
-      "Next.js development",
-      "Django development",
-      "AI automation",
-      "SEO services",
-      "website maintenance"
+      "website development Pakistan",
+      "web design Pakistan",
+      "web application development Pakistan",
+      "custom software development Pakistan",
+      "Shopify development Pakistan",
+      "Streamlit development Pakistan",
+      "React development Pakistan",
+      "Next.js development Pakistan",
+      "Django development Pakistan",
+      "AI automation Pakistan",
+      "SEO services Pakistan",
+      "website maintenance Pakistan"
     ],
     "locale": "en_PK",
     "twitterHandle": ""
   },
   "profile": {
-    "name": "The Web Yard",
+    "name": "Orvexa Systems",
     "title": "Web Development & Digital Solutions Agency",
-    "tagline": "We make your business easy to find online.",
-    "description": "The Web Yard is a Pakistan-based digital team building websites, web applications, Shopify stores, Streamlit solutions, and automation systems. We keep the process straightforward and focus on creating practical digital solutions that fit each business.",
+    "tagline": "We build digital systems that move businesses forward.",
+    "description": "Orvexa Systems is a Pakistan-based digital solutions team building modern websites, custom web applications, Shopify stores, Streamlit solutions, and AI-powered automation. We create practical, scalable digital experiences designed around real business needs.",
     "ctaText": "Get a Quote on WhatsApp",
     "ctaUrl": "https://wa.me/923398867672?text=Hi%2C%20I%20would%20like%20to%20get%20a%20quote",
     "avatar": "/logo.jpeg",
@@ -201,132 +204,92 @@
     }
   ],
   "projects": [
-  {
-    "id": "crown-properties",
-    "title": "Crown Properties",
-    "description": "A professional real estate website featuring property listings, detailed property pages, company information, services, and contact functionality.",
-    "category": "Real Estate Web Development",
-    "tech": "React, TypeScript, React Router, Supabase",
-    "url": "https://crownproperties.vercel.app/"
-  },
-  {
-    "id": "fort-gym",
-    "title": "FORT Gym",
-    "description": "A premium fitness club website presenting memberships, training facilities, coaches, recovery services, spa amenities, and customer testimonials.",
-    "category": "Fitness Web Development",
-    "tech": "React and typescript framework",
-    "url": "https://fort-beta.vercel.app/"
-  },
-  {
-    "id": "atlas-gym",
-    "title": "Atlas Gym",
-    "description": "A modern gym website showcasing fitness facilities, membership plans, professional coaches, recovery experiences, testimonials, and location details.",
-    "category": "Fitness Web Development",
-    "tech": "React, TypeScript and Lucide React",
-    "url": "https://atlasgym-delta.vercel.app/"
-  },
-  {
-    "id": "aura-salon-and-spa",
-    "title": "Aura Salon & Spa",
-    "description": "An elegant salon and spa website featuring beauty services, pricing, team profiles, gallery sections, testimonials, booking, FAQs, and contact information.",
-    "category": "Beauty & Wellness Web Development",
-    "tech": "Framer Motion",
-    "url": "https://aura-salonandspa.vercel.app/"
-  },
-  {
-    "id": "the-formula-lab",
-    "title": "The Formula Lab",
-    "description": "A full-featured e-commerce website for browsing products, viewing product details, managing a shopping cart, and administering products and users.",
-    "category": "E-commerce Web Development",
-    "tech": "React Query and v0",
-    "url": "https://www.theformulalab.store/"
-  }
-]
-  ,
+    {
+      "id": "crown-properties",
+      "title": "Crown Properties",
+      "description": "A professional real estate website featuring property listings, detailed property pages, company information, services, and contact functionality.",
+      "category": "Real Estate Web Development",
+      "tech": "React, TypeScript, React Router, Supabase",
+      "url": "https://crownproperties.vercel.app/"
+    },
+    {
+      "id": "fort-gym",
+      "title": "FORT Gym",
+      "description": "A premium fitness club website presenting memberships, training facilities, coaches, recovery services, spa amenities, and customer testimonials.",
+      "category": "Fitness Web Development",
+      "tech": "React and typescript framework",
+      "url": "https://fort-beta.vercel.app/"
+    },
+    {
+      "id": "atlas-gym",
+      "title": "Atlas Gym",
+      "description": "A modern gym website showcasing fitness facilities, membership plans, professional coaches, recovery experiences, testimonials, and location details.",
+      "category": "Fitness Web Development",
+      "tech": "React, TypeScript and Lucide React",
+      "url": "https://atlasgym-delta.vercel.app/"
+    },
+    {
+      "id": "aura-salon-and-spa",
+      "title": "Aura Salon & Spa",
+      "description": "An elegant salon and spa website featuring beauty services, pricing, team profiles, gallery sections, testimonials, booking, FAQs, and contact information.",
+      "category": "Beauty & Wellness Web Development",
+      "tech": "Framer Motion",
+      "url": "https://aura-salonandspa.vercel.app/"
+    },
+    {
+      "id": "the-formula-lab",
+      "title": "The Formula Lab",
+      "description": "A full-featured e-commerce website for browsing products, viewing product details, managing a shopping cart, and administering products and users.",
+      "category": "E-commerce Web Development",
+      "tech": "React Query and v0",
+      "url": "https://www.theformulalab.store/"
+    }
+  ],
   "blogPosts": [
-  {
-    "title": "How to Choose the Right Type of Website for Your Business",
-    "category": "Website Development",
-    "url": "/blog/choosing-right-website-type"
-  },
-  {
-    "title": "Website vs Web Application: What's the Difference and Which Do You Need?",
-    "category": "Web Application Development",
-    "url": "/blog/website-vs-web-application"
-  },
-  {
-    "title": "A Complete Guide to Starting a Shopify Store in Pakistan",
-    "category": "Shopify Development",
-    "url": "/blog/shopify-store-guide-pakistan"
-  },
-  {
-    "title": "5 Ways AI Automation Can Save Your Business Hours Every Week",
-    "category": "AI Automation",
-    "url": "/blog/ai-automation-save-time"
-  },
-  {
-    "title": "SEO Basics Every Small Business Website Needs",
-    "category": "SEO & Maintenance",
-    "url": "/blog/seo-basics-small-business"
-  },
-  {
-    "title": "Streamlit vs Traditional Dashboards: Which Is Right for You?",
-    "category": "Web Application Development",
-    "url": "/blog/streamlit-vs-traditional-dashboards"
-  },
-  {
-    "title": "Why Website Maintenance Matters After Launch",
-    "category": "SEO & Maintenance",
-    "url": "/blog/website-maintenance-matters"
-  },
-  {
-    "title": "Django vs Next.js: Choosing the Right Backend for Your Project",
-    "category": "Web Application Development",
-    "url": "/blog/django-vs-nextjs"
-  }
-
+    {
+      "title": "How to Choose the Right Type of Website for Your Business",
+      "category": "Website Development",
+      "url": "/blog/choosing-right-website-type"
+    },
+    {
+      "title": "Website vs Web Application: What's the Difference and Which Do You Need?",
+      "category": "Web Application Development",
+      "url": "/blog/website-vs-web-application"
+    },
+    {
+      "title": "A Complete Guide to Starting a Shopify Store in Pakistan",
+      "category": "Shopify Development",
+      "url": "/blog/shopify-store-guide-pakistan"
+    },
+    {
+      "title": "5 Ways AI Automation Can Save Your Business Hours Every Week",
+      "category": "AI Automation",
+      "url": "/blog/ai-automation-save-time"
+    },
+    {
+      "title": "SEO Basics Every Small Business Website Needs",
+      "category": "SEO & Maintenance",
+      "url": "/blog/seo-basics-small-business"
+    },
+    {
+      "title": "Streamlit vs Traditional Dashboards: Which Is Right for You?",
+      "category": "Web Application Development",
+      "url": "/blog/streamlit-vs-traditional-dashboards"
+    },
+    {
+      "title": "Why Website Maintenance Matters After Launch",
+      "category": "SEO & Maintenance",
+      "url": "/blog/website-maintenance-matters"
+    },
+    {
+      "title": "Django vs Next.js: Choosing the Right Backend for Your Project",
+      "category": "Web Application Development",
+      "url": "/blog/django-vs-nextjs"
+    }
   ],
   "background": {
-    "experience": [
-      {
-        "title": "The Web Yard Established",
-        "company": "The Web Yard",
-        "period": "2022",
-        "description": "The Web Yard began with a focus on helping businesses build a stronger and more professional presence online."
-      },
-      {
-        "title": "Growing Our Digital Services",
-        "company": "The Web Yard",
-        "period": "2023 - 2025",
-        "description": "Our work expanded across websites, web applications, e-commerce solutions, dashboards, and custom digital tools."
-      },
-      {
-        "title": "Building Digital Solutions",
-        "company": "The Web Yard",
-        "period": "2026 - Present",
-        "description": "Today, our team continues to build practical digital solutions for businesses across Pakistan."
-      }
-    ],
-    "education": [
-  {
-    "degree": "Web Development & Modern Technologies",
-    "institution": "The Web Yard",
-    "period": "Continuous Learning",
-    "description": "Our team continuously develops skills in modern web technologies, responsive design, and digital solutions to deliver reliable products for businesses."
-  },
-  {
-    "degree": "Software Engineering & Application Development",
-    "institution": "The Web Yard",
-    "period": "Continuous Learning",
-    "description": "Focused on building scalable web applications using modern frontend and backend technologies, databases, APIs, and cloud-ready development practices."
-  },
-  {
-    "degree": "Emerging Technologies & AI",
-    "institution": "The Web Yard",
-    "period": "Ongoing",
-    "description": "We actively explore AI automation, modern development tools, and emerging technologies to help businesses improve their digital operations."
-  }
-]
+   
+  
   },
   "workPhilosophy": [
     {
@@ -404,7 +367,38 @@
       "category": "Internal Tools"
     }
   ],
-  "testimonials": [],
+  "testimonials": [
+    {
+      "quote": "The Web Yard built our salon and spa website exactly as we envisioned. Their work was delivered on time, with great expertise and punctuality throughout the project.",
+      "author": "Sidra Ahmed",
+      "title": "Salon & Spa Owner",
+      "location": "Pakistan"
+    },
+    {
+      "quote": "Our gym website looks professional, works smoothly, and makes it much easier for new members to learn about our services. The team understood our needs and delivered a strong result.",
+      "author": "Ahmed Wahab",
+      "title": "Gym Owner",
+      "location": "Pakistan"
+    },
+    {
+      "quote": "The team was responsive, organized, and easy to work with. They turned our ideas into a clean website that represents our business professionally.",
+      "author": "Ayesha Khan",
+      "title": "Business Owner",
+      "location": "Pakistan"
+    },
+    {
+      "quote": "We appreciated the attention to detail and clear communication from start to finish. The final website is fast, modern, and simple for our customers to use.",
+      "author": "Usman Tariq",
+      "title": "Founder",
+      "location": "Pakistan"
+    },
+    {
+      "quote": "The Web Yard made the entire website process straightforward. They listened carefully, offered practical solutions, and delivered a polished online presence for our brand.",
+      "author": "Hira Malik",
+      "title": "Brand Manager",
+      "location": "Pakistan"
+    }
+  ],
   "targetRegions": [
     "Pakistan"
   ],
@@ -418,7 +412,7 @@
   },
   "faq": [
     {
-      "question": "What services does The Web Yard offer?",
+      "question": "What services does Orvexa Systems offer?",
       "answer": "We build business websites, custom web applications, Shopify stores, Streamlit applications and dashboards. We also offer AI automation, SEO improvements, and website maintenance."
     },
     {

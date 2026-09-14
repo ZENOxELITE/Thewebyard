@@ -5,7 +5,7 @@ interface JsonLdProps {
 }
 
 export function JsonLd({ data }: JsonLdProps) {
-  const { profile, meta, services, contact, background } = data
+  const { profile, meta, services, contact } = data
 
   const personSchema = {
     "@context": "https://schema.org",

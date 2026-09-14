@@ -55,19 +55,6 @@ export interface PortfolioData {
     category: string
     url: string
   }>
-  background: {
-    experience: Array<{
-      title: string
-      company: string
-      period: string
-      description: string
-    }>
-    education: Array<{
-      degree: string
-      institution: string
-      period: string
-    }>
-  }
   workPhilosophy: Array<{
     title: string
     description: string

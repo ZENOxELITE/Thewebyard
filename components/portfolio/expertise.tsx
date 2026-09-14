@@ -2,7 +2,7 @@
 
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Award, Briefcase, GraduationCap } from "lucide-react"
+import { Award } from "lucide-react"
 import type { PortfolioData } from "@/types/portfolio"
 
 interface ExpertiseProps {
@@ -10,7 +10,7 @@ interface ExpertiseProps {
 }
 
 export function Expertise({ data }: ExpertiseProps) {
-  const { expertise, crmTools, noCodeTools, vibeCodingTools, automationTools, background } = data
+  const { expertise, crmTools, noCodeTools, vibeCodingTools, automationTools } = data
 
   return (
     <section id="expertise" className="py-20 lg:py-32">
@@ -117,52 +117,6 @@ export function Expertise({ data }: ExpertiseProps) {
           </Card>
         </div>
 
-        {/* Background */}
-        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {/* Experience */}
-          <Card className="border-border/50">
-            <CardHeader>
-              <div className="flex items-center gap-2">
-                <Briefcase className="h-5 w-5 text-primary" />
-                <CardTitle className="text-lg font-semibold">Professional Experience</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-6">
-                {background.experience.map((exp, index) => (
-                  <div key={index} className="relative pl-6 border-l-2 border-border">
-                    <div className="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-primary" />
-                    <h4 className="font-medium text-foreground">{exp.title}</h4>
-                    <p className="text-sm text-muted-foreground">{exp.company}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{exp.period}</p>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Education */}
-          <Card className="border-border/50">
-            <CardHeader>
-              <div className="flex items-center gap-2">
-                <GraduationCap className="h-5 w-5 text-primary" />
-                <CardTitle className="text-lg font-semibold">Education</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-6">
-                {background.education.map((edu, index) => (
-                  <div key={index} className="relative pl-6 border-l-2 border-border">
-                    <div className="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-primary" />
-                    <h4 className="font-medium text-foreground">{edu.degree}</h4>
-                    <p className="text-sm text-muted-foreground">{edu.institution}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{edu.period}</p>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   )
