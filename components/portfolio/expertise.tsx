@@ -10,7 +10,9 @@ interface ExpertiseProps {
 }
 
 export function Expertise({ data }: ExpertiseProps) {
-  const { expertise, crmTools, noCodeTools, vibeCodingTools, automationTools } = data
+  const { expertise, crmTools, noCodeTools, vibeCodingTools, automationTools, services } = data
+  const excelDataService = services.find((service) => service.id === "excel-data-services")
+  const logoBannerService = services.find((service) => service.id === "logo-banner-design")
 
   return (
     <section id="expertise" className="py-20 lg:py-32">
@@ -51,7 +53,7 @@ export function Expertise({ data }: ExpertiseProps) {
         </div>
 
         {/* Tools Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {/* CRM Tools */}
           <Card className="border-border/50">
             <CardHeader className="pb-4">
@@ -115,6 +117,26 @@ export function Expertise({ data }: ExpertiseProps) {
               </div>
             </CardContent>
           </Card>
+
+          {[excelDataService, logoBannerService].map(
+            (service) =>
+              service && (
+                <Card key={service.id} className="border-border/50">
+                  <CardHeader className="pb-4">
+                    <CardTitle className="text-lg font-semibold">{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap gap-2">
+                      {service.features.map((feature) => (
+                        <Badge key={feature} variant="outline" className="text-xs">
+                          {feature}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ),
+          )}
         </div>
 
       </div>

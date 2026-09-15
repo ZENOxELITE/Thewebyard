@@ -63,7 +63,7 @@ export function Hero({ data }: HeroProps) {
               className="w-full sm:w-auto text-base px-8"
             >
               <a href="#projects">
-                View My Work
+                View our Work
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>

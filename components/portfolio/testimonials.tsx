@@ -39,34 +39,44 @@ export function Testimonials({ data }: TestimonialsProps) {
           </div>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card
-              key={index}
-              className="relative border-border/50 hover:border-border hover:shadow-lg transition-all duration-300"
-            >
-              <CardContent className="pt-8 pb-6">
-                <Quote className="h-8 w-8 text-primary/20 mb-4" />
-                <blockquote className="text-foreground leading-relaxed mb-6">
-                  &quot;{testimonial.quote}&quot;
-                </blockquote>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-sm font-semibold text-primary">
-                      {testimonial.author.charAt(0)}
-                    </span>
-                  </div>
-                  <div>
-                    <p className="font-medium text-foreground">{testimonial.author}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {testimonial.title} • {testimonial.location}
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+        {/* Testimonials Marquee */}
+        <div className="testimonial-marquee" aria-label="Client testimonials">
+          <div className="testimonial-marquee__track">
+            {[...Array(2)].map((_, groupIndex) => (
+              <div
+                key={groupIndex}
+                className="testimonial-marquee__group"
+                aria-hidden={groupIndex === 1}
+              >
+                {testimonials.map((testimonial, index) => (
+                  <Card
+                    key={`${groupIndex}-${index}`}
+                    className="relative w-[min(82vw,24rem)] shrink-0 border-border/50 hover:border-border hover:shadow-lg transition-all duration-300"
+                  >
+                    <CardContent className="pt-8 pb-6">
+                      <Quote className="h-8 w-8 text-primary/20 mb-4" />
+                      <blockquote className="text-foreground leading-relaxed mb-6">
+                        &quot;{testimonial.quote}&quot;
+                      </blockquote>
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                          <span className="text-sm font-semibold text-primary">
+                            {testimonial.author.charAt(0)}
+                          </span>
+                        </div>
+                        <div>
+                          <p className="font-medium text-foreground">{testimonial.author}</p>
+                          <p className="text-sm text-muted-foreground">
+                            {testimonial.title} • {testimonial.location}
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

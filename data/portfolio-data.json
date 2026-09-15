@@ -1,12 +1,16 @@
 {
   "meta": {
-    "siteTitle": "Orvexa Systems | Web Development & Digital Solutions in Pakistan",
-    "siteDescription": "Orvexa Systems builds modern websites, custom web applications, Shopify stores, Streamlit dashboards, AI automation systems, and digital solutions for businesses across Pakistan.",
-    "siteUrl": "https://buildwithmuneer.online",
+    "siteTitle": "Orvexa Systems | Web Development & Digital Solutions",
+    "siteDescription": "Orvexa Systems builds modern websites, custom web applications, Shopify stores, Streamlit dashboards, AI automation systems, and digital solutions for businesses across Pakistan, India, Bangladesh, the UAE, and the Middle East.",
+    "siteUrl": "https://orvexasystems.site",
     "ogImage": "/og-image.jpg",
     "keywords": [
       "Orvexa Systems",
       "Orvexa Systems Pakistan",
+      "web development India",
+      "web development Bangladesh",
+      "web development UAE",
+      "web development Middle East",
       "web development Pakistan",
       "website development Pakistan",
       "web design Pakistan",
@@ -28,17 +32,17 @@
     "name": "Orvexa Systems",
     "title": "Web Development & Digital Solutions Agency",
     "tagline": "We build digital systems that move businesses forward.",
-    "description": "Orvexa Systems is a Pakistan-based digital solutions team building modern websites, custom web applications, Shopify stores, Streamlit solutions, and AI-powered automation. We create practical, scalable digital experiences designed around real business needs.",
+    "description": "Orvexa Systems is a Pakistan-based digital solutions team serving businesses across Pakistan, India, Bangladesh, the UAE, and the Middle East. We build modern websites, custom web applications, Shopify stores, Streamlit solutions, and AI-powered automation designed around real business needs.",
     "ctaText": "Get a Quote on WhatsApp",
     "ctaUrl": "https://wa.me/923398867672?text=Hi%2C%20I%20would%20like%20to%20get%20a%20quote",
     "avatar": "/logo.jpeg",
     "stats": [
       {
-        "value": "15+",
+        "value": "74+",
         "label": "Clients Served"
       },
       {
-        "value": "12+",
+        "value": "68+",
         "label": "Projects Completed"
       },
       {
@@ -46,7 +50,7 @@
         "label": "Years of Experience"
       },
       {
-        "value": "4",
+        "value": "7",
         "label": "Team Members"
       }
     ]
@@ -74,6 +78,30 @@
         "Business dashboards",
         "Streamlit applications",
         "Backend development"
+      ]
+    },
+    {
+      "id": "excel-data-services",
+      "title": "Excel & Data Services",
+      "description": "We clean, organize, and structure your raw CSV or Excel data into clear, usable formats.",
+      "icon": "database",
+      "features": [
+        "Data cleaning & sorting",
+        "Dashboards & visual reports",
+        "CSV/Excel formatting",
+        "Duplicate & error removal"
+      ]
+    },
+    {
+      "id": "logo-banner-design",
+      "title": "Logo & Banner Design",
+      "description": "We design clean, professional logos and banners to give your brand a consistent visual identity.",
+      "icon": "sparkles",
+      "features": [
+        "Logo design",
+        "Banner design",
+        "Brand color palette",
+        "Social media graphics"
       ]
     },
     {
@@ -146,6 +174,21 @@
           "name": "Shopify",
           "logo": "shopify",
           "url": "https://www.shopify.com"
+        },
+        {
+          "name": "Figma",
+          "logo": "figma",
+          "url": "https://www.figma.com"
+        },
+        {
+          "name": "MS Word",
+          "logo": "microsoft-word",
+          "url": "https://www.microsoft.com/microsoft-365/word"
+        },
+        {
+          "name": "Excel",
+          "logo": "microsoft-excel",
+          "url": "https://www.microsoft.com/microsoft-365/excel"
         },
         {
           "name": "TypeScript",
@@ -294,7 +337,7 @@
   "workPhilosophy": [
     {
       "title": "Build for Real Business Needs",
-      "description": "We focus on understanding what a business actually needs before building. The goal is not to add unnecessary features, but to create something useful and practical."
+      "description": "We focus on understanding what a business actually needs before building. We only build what the business actually needs."
     },
     {
       "title": "Clear Communication",
@@ -369,41 +412,45 @@
   ],
   "testimonials": [
     {
-      "quote": "The Web Yard built our salon and spa website exactly as we envisioned. Their work was delivered on time, with great expertise and punctuality throughout the project.",
+      "quote": "Orvexa Systems turned our salon and spa ideas into a polished website that feels true to our brand. Communication was clear, and the project was delivered on time.",
       "author": "Sidra Ahmed",
       "title": "Salon & Spa Owner",
       "location": "Pakistan"
     },
     {
-      "quote": "Our gym website looks professional, works smoothly, and makes it much easier for new members to learn about our services. The team understood our needs and delivered a strong result.",
+      "quote": "Our new gym website looks professional, works smoothly, and makes it easier for members to understand our services. The team listened to our needs and delivered a strong result.",
       "author": "Ahmed Wahab",
       "title": "Gym Owner",
       "location": "Pakistan"
     },
     {
-      "quote": "The team was responsive, organized, and easy to work with. They turned our ideas into a clean website that represents our business professionally.",
+      "quote": "The Orvexa team was responsive and organized from the beginning. They shaped our ideas into a clean, professional website that represents our business well.",
       "author": "Ayesha Khan",
       "title": "Business Owner",
       "location": "Pakistan"
     },
     {
-      "quote": "We appreciated the attention to detail and clear communication from start to finish. The final website is fast, modern, and simple for our customers to use.",
+      "quote": "We appreciated the attention to detail and straightforward communication throughout the project. Our final website is fast, modern, and easy for customers to use.",
       "author": "Usman Tariq",
       "title": "Founder",
       "location": "Pakistan"
     },
     {
-      "quote": "The Web Yard made the entire website process straightforward. They listened carefully, offered practical solutions, and delivered a polished online presence for our brand.",
+      "quote": "Orvexa Systems made the website process simple and practical. They listened carefully, suggested useful solutions, and delivered a polished online presence for our brand.",
       "author": "Hira Malik",
       "title": "Brand Manager",
       "location": "Pakistan"
     }
   ],
   "targetRegions": [
-    "Pakistan"
+    "Pakistan",
+    "India",
+    "Bangladesh",
+    "UAE",
+    "Middle East"
   ],
   "contact": {
-    "email": "thewebyard.online@gmail.com",
+    "email": "",
     "calendly": "",
     "linkedin": "",
     "twitter": "",
@@ -417,7 +464,7 @@
     },
     {
       "question": "Who do you work with?",
-      "answer": "We work with businesses and individuals across Pakistan who need a professional website, e-commerce store, custom web application, or other digital solution."
+      "answer": "We work with businesses and individuals across Pakistan, India, Bangladesh, the UAE, and the Middle East who need a professional website, e-commerce store, custom web application, or other digital solution."
     },
     {
       "question": "How do I get a quote for my project?",

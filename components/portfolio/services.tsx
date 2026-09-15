@@ -29,11 +29,10 @@ export function Services({ data }: ServicesProps) {
             Services
           </Badge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            Transform Your Business Operations
+            Websites & Apps Built for Your Business
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            From CRM implementation to workflow automation, I help businesses build systems that
-            scale. Here&apos;s how I can help you grow.
+            From websites and apps to Shopify stores, AI automation, and data cleanup — we build the tools your business runs on. Here's how we can help.
           </p>
         </div>
 

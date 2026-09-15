@@ -15,18 +15,32 @@ interface ContactProps {
 }
 
 export function Contact({ data }: ContactProps) {
-  const { contact, profile } = data
+  const { contact, profile, services } = data
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [submitError, setSubmitError] = useState("")
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitError("")
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    const form = e.currentTarget
+    const formData = new FormData(form)
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(Object.fromEntries(formData.entries())),
+    })
 
     setIsSubmitting(false)
+
+    if (!response.ok) {
+      const result = await response.json().catch(() => null)
+      setSubmitError(result?.error || "We could not send your message. Please try again.")
+      return
+    }
+
     setSubmitted(true)
   }
 
@@ -168,11 +182,11 @@ export function Contact({ data }: ContactProps) {
                       required
                     >
                       <option value="">Select a service</option>
-                      <option value="crm">CRM Consulting</option>
-                      <option value="nocode">No-Code Development</option>
-                      <option value="vibe-coding">Vibe Coding Development</option>
-                      <option value="automation">Automation Consulting</option>
-                      <option value="gtm">GTM Consulting</option>
+                      {services.map((service) => (
+                        <option key={service.id} value={service.id}>
+                          {service.title}
+                        </option>
+                      ))}
                       <option value="other">Other / Not Sure</option>
                     </select>
                   </div>
@@ -187,6 +201,11 @@ export function Contact({ data }: ContactProps) {
                       className="bg-background resize-none"
                     />
                   </div>
+                  {submitError && (
+                    <p className="text-sm text-destructive" role="alert">
+                      {submitError}
+                    </p>
+                  )}
                   <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
                     {isSubmitting ? (
                       "Sending..."

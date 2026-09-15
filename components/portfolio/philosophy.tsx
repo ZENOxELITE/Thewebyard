@@ -23,13 +23,13 @@ export function Philosophy({ data }: PhilosophyProps) {
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <Badge variant="secondary" className="mb-4">
-            How I Work
+            How We Work
           </Badge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            My Working Philosophy
+            Our Working Philosophy
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            I partner with founders and decision-makers who don&apos;t need a boardroom to say
+            we partner with founders and decision-makers who don&apos;t need a boardroom to say
             &quot;go!&quot; Working directly with folks who move fast is my kind of fun.
           </p>
         </div>
@@ -53,7 +53,7 @@ export function Philosophy({ data }: PhilosophyProps) {
         {/* Motto */}
         <div className="mt-16 text-center">
           <blockquote className="text-2xl sm:text-3xl font-medium text-foreground italic max-w-2xl mx-auto">
-            &quot;You take care of me, I&apos;ll take care of your business.&quot;
+            &quot;You take care of your customers, we'll take care of your business&quot;
           </blockquote>
         </div>
       </div>
