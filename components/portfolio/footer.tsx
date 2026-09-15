@@ -142,7 +142,7 @@ export function Footer({ data }: FooterProps) {
             © {currentYear} {profile.name}. All rights reserved.
           </p>
           <p className="text-sm text-background/50">
-            Built with passion for founders who move fast.
+            No boardroom. Just "go".
           </p>
         </div>
       </div>
