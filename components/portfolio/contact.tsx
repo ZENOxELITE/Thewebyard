@@ -1,17 +1,29 @@
 "use client"
 
 import { useState } from "react"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { ArrowRight, Instagram, Mail, MessageCircle, Send } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Calendar, Mail, Linkedin, Send, ArrowRight } from "lucide-react"
 import type { PortfolioData } from "@/types/portfolio"
 
 interface ContactProps {
   data: PortfolioData
+}
+
+function ContactScene() {
+  return (
+    <div className="relative mx-auto h-64 w-full max-w-[28rem] sm:h-72">
+      <div className="absolute bottom-4 left-1/2 h-16 w-64 -translate-x-1/2 rounded-[50%] bg-[#dbe5d4]" />
+      <div className="absolute left-[18%] top-8 h-32 w-5 rotate-[-25deg] rounded-full bg-[#4b795e]" /><div className="absolute left-[28%] top-2 h-28 w-5 rotate-[20deg] rounded-full bg-[#83a476]" /><div className="absolute left-[38%] top-12 h-24 w-4 rotate-[55deg] rounded-full bg-[#6c936b]" />
+      <div className="absolute right-[15%] top-10 h-28 w-5 rotate-[30deg] rounded-full bg-[#4b795e]" /><div className="absolute right-[25%] top-1 h-24 w-4 rotate-[-20deg] rounded-full bg-[#83a476]" />
+      <div className="absolute bottom-12 left-[28%] z-10 w-[48%] rotate-[-4deg] transition-transform duration-500 hover:-translate-y-2">
+        <div className="aspect-[1.45] overflow-hidden rounded-lg border-[6px] border-[#174c3c] bg-[#f7f4e9] shadow-[0_18px_25px_rgba(18,56,42,0.22)]"><div className="h-5 border-b border-[#d4dfd0] bg-white/70 px-2 text-[5px] leading-5 text-[#47705b]">Orvexa Systems</div><div className="grid grid-cols-2 gap-2 p-3"><div><span className="block text-[7px] uppercase tracking-[0.12em] text-[#60806a]">Your vision</span><strong className="mt-2 block font-serif text-sm leading-none text-[#173e32]">Our expertise.</strong><span className="mt-3 block h-1.5 w-10 rounded bg-[#1c5b4e]" /></div><div className="rounded bg-[#d7e3d3]" /></div></div><div className="mx-[-5%] h-3 rounded-[50%] bg-[#174c3c]" />
+      </div>
+      <div className="absolute bottom-9 right-[16%] z-20 h-16 w-16 rounded-b-2xl rounded-t-lg bg-[#174c3c] text-center text-[8px] italic text-white shadow-lg"><span className="block pt-5 font-serif">Better<br />Tech.</span><span className="absolute right-[-0.8rem] top-5 h-7 w-5 rounded-r-full border-4 border-[#174c3c]" /></div>
+      <div className="absolute right-[28%] top-0 z-20 text-[#1c5b4e]"><Send className="h-8 w-8 -rotate-45" /><span className="absolute left-[-1rem] top-7 h-8 w-10 border-b border-dashed border-[#6c9a75]" /></div>
+    </div>
+  )
 }
 
 export function Contact({ data }: ContactProps) {
@@ -44,182 +56,32 @@ export function Contact({ data }: ContactProps) {
     setSubmitted(true)
   }
 
+  const contactMethods = [
+    contact.email && { label: "Email Us", detail: "Send us an email anytime.", value: contact.email, href: `mailto:${contact.email}`, icon: Mail },
+    contact.whatsappUrl && { label: "WhatsApp Us", detail: "Quick replies. Faster support.", value: "Chat on WhatsApp", href: contact.whatsappUrl, icon: MessageCircle },
+    contact.instagram && { label: "Follow Us", detail: "See our latest work and updates.", value: "Instagram", href: contact.instagram, icon: Instagram },
+  ].filter(Boolean) as Array<{ label: string; detail: string; value: string; href: string; icon: typeof Mail }>
+
   return (
-    <section id="contact" className="py-20 lg:py-32">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <Badge variant="secondary" className="mb-4">
-            Get in Touch
-          </Badge>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6 text-balance">
-            Let&apos;s Work Together
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Ready to transform your business operations? The quickest way to proceed is to schedule
-            a discovery call.
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
-          {/* Left Column - CTA & Links */}
-          <div className="space-y-8">
-            {/* Primary CTA Card */}
-            <Card className="border-primary/20 bg-primary/5">
-              <CardHeader>
-                <CardTitle className="text-xl font-semibold flex items-center gap-2">
-                  <Calendar className="h-5 w-5 text-primary" />
-                  Book a Discovery Call
-                </CardTitle>
-                <CardDescription>
-                  The fastest way to get started. Let&apos;s discuss your needs and see if we&apos;re a good
-                  fit.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button asChild size="lg" className="w-full">
-                  <a href={contact.calendly} target="_blank" rel="noopener noreferrer">
-                    Schedule Now
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Contact Links */}
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-foreground">Or reach out directly</h3>
-              <div className="space-y-3">
-                <a
-                  href={`mailto:${contact.email}`}
-                  className="flex items-center gap-3 p-4 rounded-lg border border-border/50 bg-card hover:border-border hover:shadow-sm transition-all duration-300"
-                >
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Mail className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium text-foreground">{contact.email}</p>
-                  </div>
-                </a>
-                <a
-                  href={contact.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-4 rounded-lg border border-border/50 bg-card hover:border-border hover:shadow-sm transition-all duration-300"
-                >
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Linkedin className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">LinkedIn</p>
-                    <p className="font-medium text-foreground">Connect on LinkedIn</p>
-                  </div>
-                </a>
-              </div>
+    <section id="contact" className="relative overflow-hidden bg-[#f2eee4] py-20 text-[#1f2825] lg:py-28">
+      <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-white/40 to-transparent" />
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-start lg:gap-14">
+          <div>
+            <span className="mb-4 inline-flex rounded-full bg-[#dfd9c9] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#5d6257]">Get in Touch</span>
+            <h2 className="max-w-md font-serif text-5xl leading-[0.9] tracking-[-0.045em] text-[#063e2e] sm:text-6xl">Let&apos;s Work<br />Together</h2>
+            <p className="mt-6 max-w-md text-sm leading-6 text-[#587266] sm:text-base">Have a project in mind, a question, or just want to say hello? We&apos;d love to hear from you. Our team is here to help you turn your ideas into powerful digital solutions.</p>
+            <p className="mt-8 max-w-xs -rotate-6 font-serif text-2xl italic leading-6 text-[#1c5b4e]">Get in touch.<br />Let&apos;s create something great!</p>
+            <ContactScene />
+            <div className="grid gap-3 sm:grid-cols-2">
+              {contactMethods.map((method) => { const Icon = method.icon; return <a key={method.label} href={method.href} target={method.href.startsWith("mailto:") ? undefined : "_blank"} rel={method.href.startsWith("mailto:") ? undefined : "noopener noreferrer"} className="group rounded-xl border border-[#ddd6c8] bg-[#fbf9f3]/70 p-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#bcb4a4] hover:shadow-[0_12px_25px_rgba(67,61,46,0.1)]"><div className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#dce9d9] text-[#1c5b4e]"><Icon className="h-5 w-5" /></span><div className="min-w-0"><h3 className="text-sm font-semibold text-[#26312d]">{method.label}</h3><p className="mt-1 text-[10px] text-[#718075]">{method.detail}</p><p className="mt-2 truncate text-[10px] font-medium text-[#1c5b4e]">{method.value}</p></div><ArrowRight className="ml-auto h-4 w-4 shrink-0 text-[#8aa08e] transition-transform group-hover:translate-x-1" /></div></a> })}
             </div>
           </div>
 
-          {/* Right Column - Contact Form */}
-          <Card className="border-border/50">
-            <CardHeader>
-              <CardTitle className="text-xl font-semibold">Send a Message</CardTitle>
-              <CardDescription>
-                Fill out the form below and I&apos;ll get back to you within 24-48 hours.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              {submitted ? (
-                <div className="text-center py-8">
-                  <div className="w-16 h-16 rounded-full bg-green-100 text-green-600 flex items-center justify-center mx-auto mb-4">
-                    <Send className="h-8 w-8" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Message Sent!</h3>
-                  <p className="text-muted-foreground">
-                    Thank you for reaching out. I&apos;ll get back to you soon.
-                  </p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Name</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        placeholder="Your name"
-                        required
-                        className="bg-background"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="you@company.com"
-                        required
-                        className="bg-background"
-                      />
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="company">Company</Label>
-                    <Input
-                      id="company"
-                      name="company"
-                      placeholder="Your company name"
-                      className="bg-background"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="service">What service are you interested in?</Label>
-                    <select
-                      id="service"
-                      name="service"
-                      className="w-full h-10 px-3 rounded-md border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
-                      required
-                    >
-                      <option value="">Select a service</option>
-                      {services.map((service) => (
-                        <option key={service.id} value={service.id}>
-                          {service.title}
-                        </option>
-                      ))}
-                      <option value="other">Other / Not Sure</option>
-                    </select>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      placeholder="Tell me about your project and goals..."
-                      rows={4}
-                      required
-                      className="bg-background resize-none"
-                    />
-                  </div>
-                  {submitError && (
-                    <p className="text-sm text-destructive" role="alert">
-                      {submitError}
-                    </p>
-                  )}
-                  <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
-                    {isSubmitting ? (
-                      "Sending..."
-                    ) : (
-                      <>
-                        Send Message
-                        <Send className="ml-2 h-5 w-5" />
-                      </>
-                    )}
-                  </Button>
-                </form>
-              )}
-            </CardContent>
-          </Card>
+          <div className="rounded-2xl border border-[#ddd6c8] bg-[#fbf9f3]/85 p-6 shadow-[0_12px_32px_rgba(67,61,46,0.06)] sm:p-8 lg:mt-8 lg:p-10">
+            <div className="mb-7"><span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[#47705b]">Send us a message</span><h3 className="mt-3 font-serif text-3xl leading-none tracking-[-0.035em] text-[#26312d] sm:text-4xl">Tell Us About Your Project</h3><p className="mt-4 text-sm leading-6 text-[#6c7065]">Fill out the form below and we&apos;ll get back to you as soon as possible. We&apos;re excited to hear about your ideas!</p></div>
+            {submitted ? <div className="flex min-h-80 flex-col items-center justify-center text-center"><div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#dce9d9] text-[#1c5b4e]"><Send className="h-7 w-7" /></div><h4 className="mt-5 text-xl font-semibold text-[#26312d]">Message Sent!</h4><p className="mt-2 text-sm text-[#6c7065]">Thank you for reaching out. I&apos;ll get back to you soon.</p></div> : <form onSubmit={handleSubmit} className="space-y-5"><div className="grid gap-5 sm:grid-cols-2"><div className="space-y-2"><Label htmlFor="name" className="text-xs text-[#526b5e]">Name *</Label><Input id="name" name="name" placeholder="Your name" required className="h-12 rounded-lg border-[#d8dfd2] bg-[#f8f5eb]/70 text-sm" /></div><div className="space-y-2"><Label htmlFor="email" className="text-xs text-[#526b5e]">Email *</Label><Input id="email" name="email" type="email" placeholder="you@company.com" required className="h-12 rounded-lg border-[#d8dfd2] bg-[#f8f5eb]/70 text-sm" /></div></div><div className="space-y-2"><Label htmlFor="company" className="text-xs text-[#526b5e]">Company</Label><Input id="company" name="company" placeholder="Your company name" className="h-12 rounded-lg border-[#d8dfd2] bg-[#f8f5eb]/70 text-sm" /></div><div className="space-y-2"><Label htmlFor="service" className="text-xs text-[#526b5e]">What service are you interested in? *</Label><select id="service" name="service" className="h-12 w-full rounded-lg border border-[#d8dfd2] bg-[#f8f5eb]/70 px-3 text-sm text-[#526b5e] focus:outline-none focus:ring-2 focus:ring-[#1c5b4e]" required><option value="">Select a service</option>{services.map((service) => <option key={service.id} value={service.id}>{service.title}</option>)}<option value="other">Other / Not Sure</option></select></div><div className="space-y-2"><Label htmlFor="message" className="text-xs text-[#526b5e]">Message *</Label><Textarea id="message" name="message" placeholder="Tell us about your project and goals..." rows={5} required className="resize-none rounded-lg border-[#d8dfd2] bg-[#f8f5eb]/70 text-sm" /></div>{submitError && <p className="text-sm text-red-700" role="alert">{submitError}</p>}<button type="submit" disabled={isSubmitting} className="group inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#07543e] text-sm font-semibold text-white transition-all hover:bg-[#063f30] disabled:cursor-not-allowed disabled:opacity-60">{isSubmitting ? "Sending..." : <>Send Message <Send className="h-4 w-4 transition-transform group-hover:translate-x-1" /></>}</button></form>}
+          </div>
         </div>
       </div>
     </section>

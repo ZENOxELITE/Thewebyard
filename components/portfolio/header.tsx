@@ -38,10 +38,10 @@ export function Header({ data }: HeaderProps) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed left-0 right-0 top-0 z-50 text-[#063e2e] transition-[background-color,border-color,box-shadow,backdrop-filter] duration-500 ease-out ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border shadow-sm"
-          : "bg-transparent"
+          ? "border-b border-[#d8dfd2]/75 bg-[#fbf8f0]/78 shadow-[0_8px_24px_rgba(42,70,55,0.08)] backdrop-blur-xl"
+          : "border-b border-transparent bg-transparent shadow-none backdrop-blur-0"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -82,7 +82,14 @@ export function Header({ data }: HeaderProps) {
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full sm:w-80 p-6">
+            <SheetContent
+              side="right"
+              className={`w-full p-6 transition-[background-color,border-color,box-shadow,backdrop-filter] duration-500 sm:w-80 ${
+                isScrolled
+                  ? "border-l border-[#d8dfd2]/75 bg-[#fbf8f0]/82 shadow-[-8px_0_24px_rgba(42,70,55,0.08)] backdrop-blur-xl"
+                  : "border-l border-[#d8dfd2]/50 bg-[#fbf8f0]/72 shadow-none backdrop-blur-lg"
+              }`}
+            >
               <div className="flex flex-col h-full">
                 <SheetTitle className="text-lg font-semibold mb-8">
                   {data.profile.name}
