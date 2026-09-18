@@ -1,18 +1,23 @@
 "use client"
 
 import { ArrowRight, ArrowUpRight, ExternalLink } from "lucide-react"
+import type { StaticImageData } from "next/image"
 import type { PortfolioData } from "@/types/portfolio"
 
 interface ProjectsProps {
   data: PortfolioData
 }
 
-const projectImages: Record<string, string> = {
-  "atlas-gym": "/Images/Orvexa%20Systems%20cover%20photo.png",
-  "crown-properties": "/Images/Orvexa%20Systems%20cover%20photo%202.png",
-  "fort-gym": "/Images/Post%201.png",
-  "aura-salon-and-spa": "/Images/Orvexa%20Systems%20cover%20photo.png",
-  "the-formula-lab": "/Images/Orvexa%20Systems%20cover%20photo%202.png",
+import atlasCover from "@/Images/Orvexa Systems cover photo.png"
+import brandCover from "@/Images/Orvexa Systems cover photo 2.png"
+import postCover from "@/Images/Post 1.png"
+
+const projectImages: Record<string, StaticImageData> = {
+  "atlas-gym": atlasCover,
+  "crown-properties": brandCover,
+  "fort-gym": postCover,
+  "aura-salon-and-spa": atlasCover,
+  "the-formula-lab": brandCover,
 }
 
 const projectOrder = ["crown-properties", "fort-gym", "aura-salon-and-spa", "the-formula-lab"]
@@ -22,7 +27,7 @@ function ProjectImage({ projectId, title, featured = false }: { projectId: strin
 
   return (
     <div className={`relative overflow-hidden bg-[#e3e8dc] ${featured ? "h-full min-h-72 lg:min-h-[22rem]" : "h-44"}`}>
-      <img src={image} alt={`${title} project preview`} className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.04]" />
+      <img src={image.src} alt={`${title} project preview`} className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.04]" />
       <div className="absolute inset-0 bg-[#0c4635]/10 transition-colors duration-500 group-hover:bg-[#0c4635]/5" />
       <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full border-[18px] border-white/30" />
     </div>
