@@ -17,6 +17,17 @@ const projectImages: Record<string, string> = {
 
 const projectOrder = ["crown-properties", "fort-gym", "aura-salon-and-spa", "the-formula-lab"]
 
+const articleImages: Record<string, string> = {
+  "/blog/choosing-right-website-type": "/article-images/01-website-development.png",
+  "/blog/website-vs-web-application": "/article-images/02-website-vs-web-application.png",
+  "/blog/shopify-store-guide-pakistan": "/article-images/03-shopify-store.png",
+  "/blog/ai-automation-save-time": "/article-images/04-ai-automation.png",
+  "/blog/seo-basics-small-business": "/article-images/05-seo-basics.png",
+  "/blog/streamlit-vs-traditional-dashboards": "/article-images/06-streamlit-vs-dashboards.png",
+  "/blog/website-maintenance-matters": "/article-images/07-website-maintenance.png",
+  "/blog/django-vs-nextjs": "/article-images/08-django-vs-nextjs.png",
+}
+
 function ProjectImage({ projectId, title, featured = false }: { projectId: string; title: string; featured?: boolean }) {
   const src = projectImages[projectId]
 
@@ -38,9 +49,8 @@ function ProjectCard({ project }: { project: PortfolioData["projects"][number] }
   )
 }
 
-function ArticleVisual({ index, featured = false }: { index: number; featured?: boolean }) {
-  const tones = ["bg-[#dce4d9]", "bg-[#e7e4d6]", "bg-[#e8e3d4]", "bg-[#dce7df]", "bg-[#e8ddd5]", "bg-[#e3e8d9]", "bg-[#dbe6e3]"]
-  return <div className={`absolute inset-0 overflow-hidden ${tones[index % tones.length]}`}><div className="absolute -right-10 -top-10 h-40 w-40 rounded-full border-[20px] border-white/40" /><div className={`absolute ${featured ? "left-[25%] top-8 h-40 w-[45%]" : "left-8 top-8 h-24 w-28"} rounded-lg border border-white/80 bg-[#f8f5eb]/85 p-3 shadow-lg`}><div className="h-2 w-14 rounded bg-[#5b856d]" /><div className="mt-3 grid grid-cols-2 gap-1"><span className="h-12 rounded bg-[#c5d8c8]" /><span className="h-12 rounded bg-[#eef1e8]" /><span className="col-span-2 h-3 rounded bg-[#a3bea9]" /></div></div><div className="absolute bottom-[-2rem] left-[-1rem] h-32 w-32 rounded-full bg-[#9dbbaa]/40" /></div>
+function ArticleVisual({ image, title }: { image: string; title: string }) {
+  return <div className="article-card-image absolute inset-0 bg-[#e3e8dc]"><img src={image} alt={`${title} article preview`} /></div>
 }
 
 export function Projects({ data }: ProjectsProps) {
@@ -70,11 +80,13 @@ export function Projects({ data }: ProjectsProps) {
 
         <div className="mt-10 flex items-center justify-center gap-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#77786d]"><span className="h-px w-10 bg-[#c9c1b1]" />5 Projects<span className="h-px w-10 bg-[#c9c1b1]" /></div>
 
+        {/*
         <div className="mt-20 border-t border-[#d8d1c2] pt-12">
           <div className="mb-10 flex flex-col justify-between gap-8 md:flex-row md:items-end"><div className="max-w-xl"><span className="mb-4 inline-flex rounded-full bg-[#dfd9c9] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#5d6257]">Insights</span><h3 className="font-serif text-4xl leading-none tracking-[-0.04em] sm:text-5xl">In-Depth Articles &amp; Guides</h3><p className="mt-4 max-w-md text-sm leading-6 text-[#5d6257]">Practical guides, technical insights, and ideas to help you build better digital systems.</p></div><p className="hidden max-w-44 -rotate-6 font-serif text-2xl italic leading-6 text-[#1c5b4e] md:block">Ideas worth<br />exploring</p></div>
-          {blogPosts[0] && <a href={blogPosts[0].url} className="group mb-4 grid min-h-[22rem] overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#fbf9f3] shadow-[0_8px_30px_rgba(67,61,46,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(67,61,46,0.12)] lg:grid-cols-[0.9fr_1.1fr]"><div className="flex flex-col justify-between p-6 sm:p-8 lg:p-10"><div><div className="mb-5 flex items-center gap-3 text-[9px] font-semibold uppercase tracking-[0.12em] text-[#77786d]"><span>{blogPosts[0].category}</span><span className="h-1 w-1 rounded-full bg-[#a9aa9b]" /><span>Featured guide</span></div><h4 className="max-w-lg text-2xl font-semibold leading-[1.05] tracking-[-0.035em] text-[#26312d] sm:text-3xl lg:text-4xl">{blogPosts[0].title}</h4><p className="mt-4 max-w-md text-sm leading-6 text-[#6c7065]">Your website is more than just a digital address — it&apos;s a powerful tool that can help you attract customers, build credibility, and grow your business.</p></div><span className="mt-8 inline-flex w-fit items-center gap-3 rounded-full bg-[#1c5b4e] px-5 py-3 text-xs font-semibold text-white">Read article <ArrowRight className="h-4 w-4" /></span></div><div className="relative min-h-64 overflow-hidden sm:min-h-80"><ArticleVisual index={0} featured /></div></a>}
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{blogPosts.slice(1).map((post, index) => <a key={post.url} href={post.url} className="group relative flex min-h-[19rem] flex-col overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#fbf9f3] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(67,61,46,0.1)]"><div className="relative h-36 shrink-0 overflow-hidden"><ArticleVisual index={index + 1} /><span className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#f8f5eb]/90 text-[#5d6257]"><ExternalLink className="h-4 w-4" /></span></div><div className="flex flex-1 flex-col p-5"><span className="text-[9px] font-semibold uppercase tracking-[0.1em] text-[#77786d]">{post.category}</span><h4 className="mt-3 text-base font-semibold leading-[1.12] tracking-[-0.025em] text-[#26312d]">{post.title}</h4><span className="mt-auto pt-5 text-[9px] font-semibold text-[#1c5b4e]">Read article →</span></div></a>)}</div>
+          {blogPosts[0] && <a href={blogPosts[0].url} className="group mb-4 grid min-h-[22rem] overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#fbf9f3] shadow-[0_8px_30px_rgba(67,61,46,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_36px_rgba(67,61,46,0.12)] lg:grid-cols-[0.9fr_1.1fr]"><div className="flex flex-col justify-between p-6 sm:p-8 lg:p-10"><div><div className="mb-5 flex items-center gap-3 text-[9px] font-semibold uppercase tracking-[0.12em] text-[#77786d]"><span>{blogPosts[0].category}</span><span className="h-1 w-1 rounded-full bg-[#a9aa9b]" /><span>Featured guide</span></div><h4 className="max-w-lg text-2xl font-semibold leading-[1.05] tracking-[-0.035em] text-[#26312d] sm:text-3xl lg:text-4xl">{blogPosts[0].title}</h4><p className="mt-4 max-w-md text-sm leading-6 text-[#6c7065]">Your website is more than just a digital address — it&apos;s a powerful tool that can help you attract customers, build credibility, and grow your business.</p></div><span className="mt-8 inline-flex w-fit items-center gap-3 rounded-full bg-[#1c5b4e] px-5 py-3 text-xs font-semibold text-white">Read article <ArrowRight className="h-4 w-4" /></span></div><div className="relative min-h-64 overflow-hidden sm:min-h-80"><ArticleVisual image={articleImages[blogPosts[0].url]} title={blogPosts[0].title} /></div></a>}
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{blogPosts.slice(1).map((post) => <a key={post.url} href={post.url} className="group relative flex min-h-[19rem] flex-col overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#fbf9f3] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(67,61,46,0.1)]"><div className="relative h-36 shrink-0 overflow-hidden"><ArticleVisual image={articleImages[post.url]} title={post.title} /><span className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-[#f8f5eb]/90 text-[#5d6257]"><ExternalLink className="h-4 w-4" /></span></div><div className="flex flex-1 flex-col p-5"><span className="text-[9px] font-semibold uppercase tracking-[0.1em] text-[#77786d]">{post.category}</span><h4 className="mt-3 text-base font-semibold leading-[1.12] tracking-[-0.025em] text-[#26312d]">{post.title}</h4><span className="mt-auto pt-5 text-[9px] font-semibold text-[#1c5b4e]">Read article →</span></div></a>)}</div>
         </div>
+        */}
       </div>
     </section>
   )
