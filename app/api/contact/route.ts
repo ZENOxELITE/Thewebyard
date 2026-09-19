@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 
-const recipientEmail = "muneerahmed12shaikh@gmail.com"
+const recipientEmail = "orvexasystems.site@gmail.com"
 
 interface ContactRequest {
   name?: string

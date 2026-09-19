@@ -76,6 +76,7 @@ export interface PortfolioData {
     author: string
     title: string
     location: string
+    rating: number
   }>
   targetRegions: string[]
   contact: {
@@ -83,6 +84,9 @@ export interface PortfolioData {
     calendly: string
     linkedin: string
     twitter: string
+    instagram: string
+    whatsapp?: string
+    whatsappUrl?: string
   }
   faq: Array<{
     question: string

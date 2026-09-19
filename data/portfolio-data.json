@@ -415,31 +415,43 @@
       "quote": "Orvexa Systems turned our salon and spa ideas into a polished website that feels true to our brand. Communication was clear, and the project was delivered on time.",
       "author": "Sidra Ahmed",
       "title": "Salon & Spa Owner",
-      "location": "Pakistan"
+      "location": "Pakistan",
+      "rating": 5
     },
     {
       "quote": "Our new gym website looks professional, works smoothly, and makes it easier for members to understand our services. The team listened to our needs and delivered a strong result.",
       "author": "Ahmed Wahab",
       "title": "Gym Owner",
-      "location": "Pakistan"
+      "location": "Pakistan",
+      "rating": 5
     },
     {
       "quote": "The Orvexa team was responsive and organized from the beginning. They shaped our ideas into a clean, professional website that represents our business well.",
       "author": "Ayesha Khan",
       "title": "Business Owner",
-      "location": "Pakistan"
+      "location": "Pakistan",
+      "rating": 4
     },
     {
       "quote": "We appreciated the attention to detail and straightforward communication throughout the project. Our final website is fast, modern, and easy for customers to use.",
       "author": "Usman Tariq",
       "title": "Founder",
-      "location": "Pakistan"
+      "location": "Pakistan",
+      "rating": 5
     },
     {
       "quote": "Orvexa Systems made the website process simple and practical. They listened carefully, suggested useful solutions, and delivered a polished online presence for our brand.",
       "author": "Hira Malik",
       "title": "Brand Manager",
-      "location": "Pakistan"
+      "location": "Pakistan",
+      "rating": 5
+    },
+    {
+      "quote": "The team understood what we needed and made the entire process feel straightforward. We now have a digital presence that is clear, reliable, and ready to grow with us.",
+      "author": "Bilal Hassan",
+      "title": "Business Founder",
+      "location": "Pakistan",
+      "rating": 4
     }
   ],
   "targetRegions": [
@@ -450,10 +462,11 @@
     "Middle East"
   ],
   "contact": {
-    "email": "",
+    "email": "orvexasystems.site@gmail.com",
     "calendly": "",
     "linkedin": "",
     "twitter": "",
+    "instagram": "https://www.instagram.com/orvexasystems1/",
     "whatsapp": "03398867672",
     "whatsappUrl": "https://wa.me/923398867672?text=Hi%2C%20I%20would%20like%20to%20get%20a%20quote"
   },
@@ -477,6 +490,18 @@
     {
       "question": "Do you offer support after a website is launched?",
       "answer": "Yes. We can provide website maintenance, updates, bug fixes, and other support based on your project's requirements."
+    },
+    {
+      "question": "What makes Orvexa Systems different?",
+      "answer": "We combine practical business understanding with clean design, reliable development, and clear communication throughout the project."
+    },
+    {
+      "question": "Can you build both websites and custom applications?",
+      "answer": "Yes. We build business websites, e-commerce stores, dashboards, custom web applications, and digital tools based on your requirements."
+    },
+    {
+      "question": "Which regions do you serve?",
+      "answer": "We work with clients across Pakistan, India, Bangladesh, the UAE, the Middle East, and other regions through remote collaboration."
     }
   ]
 }
