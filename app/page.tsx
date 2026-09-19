@@ -5,9 +5,9 @@ import { Hero } from "@/components/portfolio/hero"
 // import { Stats } from "@/components/portfolio/stats"
 import { Services } from "@/components/portfolio/services"
 import { Projects } from "@/components/portfolio/projects"
-import { Expertise } from "@/components/portfolio/expertise"
+// import { Expertise } from "@/components/portfolio/expertise"
 import { Philosophy } from "@/components/portfolio/philosophy"
-import { Testimonials } from "@/components/portfolio/testimonials"
+// import { Testimonials } from "@/components/portfolio/testimonials"
 import { FAQ } from "@/components/portfolio/faq"
 import { Contact } from "@/components/portfolio/contact"
 import { Footer } from "@/components/portfolio/footer"
@@ -71,9 +71,9 @@ export default function PortfolioPage() {
         {/* <Stats data={portfolioData} /> */}
         <Services data={portfolioData} />
         <Projects data={portfolioData} />
-        <Expertise data={portfolioData} />
+        {/* <Expertise data={portfolioData} /> */}
         <Philosophy data={portfolioData} />
-        <Testimonials data={portfolioData} />
+        {/* <Testimonials data={portfolioData} /> */}
         <FAQ data={portfolioData} />
         <Contact data={portfolioData} />
         <Footer data={portfolioData} />
