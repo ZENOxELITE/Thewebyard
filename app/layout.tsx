@@ -16,11 +16,8 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: {
-    default: 'Amit Sarda | Business Consultant & Systems Designer',
-    template: '%s | Amit Sarda',
-  },
-  description: 'Expert CRM consulting, no-code development, automation, and GTM strategy for growing businesses. 200+ clients served with 100% 5-star reviews since 2016.',
+  title: 'Orvexa Systems | Websites, Web Apps & Shopify Stores',
+  description: 'Orvexa Systems builds websites, web apps, Shopify stores, and automation for businesses in South Asia and the Middle East. Get a free quote.',
   generator: 'v0.app',
   icons: {
     icon: '/favicon.png',

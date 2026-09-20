@@ -16,23 +16,21 @@ const processVisuals = [
 ]
 
 const processLabels = [
-  { title: "Discover & Discuss", description: "We start with a detailed conversation to understand your needs, goals, and vision." },
-  { title: "Plan & Strategize", description: "We create a tailored plan, recommend the best solutions, and set a clear timeline." },
-  { title: "Design & Develop", description: "We bring your idea to life with clean code, modern design, and best practices." },
-  { title: "Test & Refine", description: "We thoroughly test across devices and scenarios to ensure quality, performance, and flawless functionality." },
-  { title: "Launch & Support", description: "We deploy your project and stay with you for ongoing support and improvements." },
+  { title: "Discovery call", description: "We start with a call about your business, your customers, and what the project has to achieve. Then we scope only what you need." },
+  { title: "Written plan", description: "You get a plan that states what we are building, why, the timeline, and the cost. No surprises later." },
+  { title: "Design and build", description: "We design the pages, then build them with tools that are easy to maintain, so the site keeps working long after launch day." },
+  { title: "Testing", description: "We test on phones, tablets, and desktops, and fix issues before you see the final version." },
+  { title: "Launch and support", description: "We put your site live, check that everything works, and stay available for updates and fixes afterward." },
 ]
 
 const commitments = [
-  { title: "Quality First", description: "We never compromise on quality, security, or performance.", icon: ShieldCheck },
-  { title: "Client-Centric", description: "Your success is our priority. We listen, adapt, and keep you involved.", icon: MessageCircle },
-  { title: "On-Time Delivery", description: "We respect your time and deliver within agreed timelines.", icon: ClipboardCheck },
-  { title: "Continuous Support", description: "We’re always here, even after the launch.", icon: Sparkles },
+  { title: "Secure and fast by default", description: "Every site is checked for speed, basic security, and mobile layout before launch.", icon: ShieldCheck },
+  { title: "Clear communication", description: "You see progress at each step and can give feedback before we move on.", icon: MessageCircle },
+  { title: "Deadlines in writing", description: "We agree on a delivery date before we start and tell you early if anything changes.", icon: ClipboardCheck },
+  { title: "Support after launch", description: "Questions, fixes, and updates do not stop at go-live. Message us on WhatsApp and we reply within 24 hours.", icon: Sparkles },
 ]
 
 export function Philosophy({ data }: PhilosophyProps) {
-  const { workPhilosophy } = data
-
   return (
     <section className="relative overflow-hidden bg-[#f2eee4] py-20 text-[#1f2825] lg:py-28">
       <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-white/40 to-transparent" />
@@ -40,21 +38,20 @@ export function Philosophy({ data }: PhilosophyProps) {
         <div className="mb-12 flex flex-col justify-between gap-8 md:flex-row md:items-end">
           <div className="max-w-xl">
             <span className="mb-4 inline-flex rounded-full bg-[#dfd9c9] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#5d6257]">How We Work</span>
-            <h2 className="max-w-lg font-serif text-4xl leading-[0.92] tracking-[-0.04em] sm:text-5xl lg:text-6xl">Our Working<br />Philosophy</h2>
-            <p className="mt-5 max-w-md text-sm leading-6 text-[#5d6257] sm:text-base">We follow a clear, collaborative, and transparent process to make sure every project is delivered with quality, on time, and aligned with your goals.</p>
+            <h2 className="max-w-lg font-serif text-4xl leading-[0.92] tracking-[-0.04em] sm:text-5xl lg:text-6xl">From first call<br />to launch</h2>
+            <p className="mt-5 max-w-md text-sm leading-6 text-[#5d6257] sm:text-base">Every project follows the same five steps, so you always know what is happening and what comes next.</p>
           </div>
-          <p className="hidden max-w-48 -rotate-6 font-serif text-2xl italic leading-6 text-[#1c5b4e] md:block">Your vision +<br />Our process =<br />Real results.</p>
+          <p className="hidden max-w-48 -rotate-6 font-serif text-2xl italic leading-6 text-[#1c5b4e] md:block">You know your business.<br />We know how to build for it.</p>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5">
           {processLabels.map((step, index) => {
-            const original = workPhilosophy[index]
             return (
               <div key={step.title} className="group relative flex min-h-[25rem] flex-col overflow-visible rounded-xl border border-[#ddd6c8] bg-[#fbf9f3] p-5 shadow-[0_8px_30px_rgba(67,61,46,0.05)] transition-all duration-500 hover:-translate-y-1 hover:border-[#bcb4a4] hover:shadow-[0_16px_32px_rgba(67,61,46,0.12)] sm:p-6">
                 <div className="relative -mx-5 -mt-5 h-32 overflow-hidden rounded-t-xl bg-[#e1e9df] sm:-mx-6 sm:-mt-6"><div className="absolute -right-8 -top-8 h-32 w-32 rounded-full border-[18px] border-white/40" />{processVisuals[index]}</div>
                 <div className="relative z-10 mt-5 flex h-7 w-7 items-center justify-center rounded-full bg-[#e7eee5] text-[10px] font-semibold text-[#1c5b4e]">0{index + 1}</div>
                 <h3 className="mt-4 text-lg font-semibold tracking-[-0.025em] text-[#26312d]">{step.title}</h3>
-                <p className="mt-2 text-xs leading-5 text-[#6c7065]">{index < 3 && original ? original.description : step.description}</p>
+                <p className="mt-2 text-xs leading-5 text-[#6c7065]">{step.description}</p>
                 <span className="mt-auto flex h-8 w-8 items-center justify-center rounded-full bg-[#eee9dd] text-[#1c5b4e] transition-colors group-hover:bg-[#1c5b4e] group-hover:text-white"><ArrowRight className="h-4 w-4" /></span>
                 {index < processLabels.length - 1 && <span className="absolute -right-4 top-1/2 z-20 hidden text-xl text-[#1c5b4e] lg:block">→</span>}
               </div>
@@ -63,11 +60,11 @@ export function Philosophy({ data }: PhilosophyProps) {
         </div>
 
         <div className="mt-7 grid overflow-hidden rounded-xl border border-[#d3dbd0] bg-[#f8f5eb] lg:grid-cols-[1.1fr_2fr]">
-          <div className="relative overflow-hidden bg-[#063e2e] px-6 py-8 text-white sm:px-10"><div className="absolute -right-20 -top-16 h-56 w-56 rounded-full border-[28px] border-[#2f7359]/60" /><div className="absolute bottom-[-4rem] right-[-1rem] h-40 w-40 rounded-full bg-[#7b9d7c]/30" /><div className="relative z-10"><span className="inline-flex rounded-full bg-white/10 px-3 py-1 text-[9px] font-semibold uppercase tracking-[0.16em] text-white/80">Our Commitment</span><h3 className="mt-5 max-w-xs font-serif text-3xl leading-[0.95] tracking-[-0.03em] sm:text-4xl">More Than Just<br />Development</h3><p className="mt-4 max-w-sm text-xs leading-5 text-white/70">{data.profile.tagline} We’re building long-term partnerships.</p></div></div>
+          <div className="relative overflow-hidden bg-[#063e2e] px-6 py-8 text-white sm:px-10"><div className="absolute -right-20 -top-16 h-56 w-56 rounded-full border-[28px] border-[#2f7359]/60" /><div className="absolute bottom-[-4rem] right-[-1rem] h-40 w-40 rounded-full bg-[#7b9d7c]/30" /><div className="relative z-10"><span className="inline-flex rounded-full bg-white/10 px-3 py-1 text-[9px] font-semibold uppercase tracking-[0.16em] text-white/80">Our Commitment</span><h3 className="mt-5 max-w-xs font-serif text-3xl leading-[0.95] tracking-[-0.03em] sm:text-4xl">What you can expect<br />from us</h3><p className="mt-4 max-w-sm text-xs leading-5 text-white/70">We want to work with you beyond the first project, so we keep the work clear and the promises specific.</p></div></div>
           <div className="grid gap-6 px-6 py-8 sm:grid-cols-2 sm:px-10 lg:grid-cols-4 lg:gap-5 lg:px-8">{commitments.map((commitment) => { const Icon = commitment.icon; return <div key={commitment.title} className="group"><Icon className="h-6 w-6 text-[#1c5b4e] transition-transform duration-300 group-hover:-translate-y-1" /><h4 className="mt-4 text-sm font-semibold text-[#26312d]">{commitment.title}</h4><p className="mt-2 text-[11px] leading-5 text-[#6c7065]">{commitment.description}</p></div> })}</div>
         </div>
 
-        <blockquote className="mt-10 text-center font-serif text-xl italic text-[#476453] sm:text-2xl">&quot;You take care of your customers, we&apos;ll take care of your business.&quot;</blockquote>
+        <blockquote className="mt-10 text-center font-serif text-xl italic text-[#476453] sm:text-2xl">&quot;You focus on your customers. We&apos;ll handle the technology.&quot;</blockquote>
       </div>
     </section>
   )

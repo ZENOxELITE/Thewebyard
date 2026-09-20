@@ -65,20 +65,19 @@ export function Projects({ data }: ProjectsProps) {
         <div className="grid gap-10 lg:grid-cols-[0.65fr_1.35fr] lg:items-center lg:gap-12">
           <div className="relative">
             <span className="mb-4 inline-flex rounded-full bg-[#dfd9c9] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#5d6257]">Our Work</span>
-            <h2 className="max-w-sm font-serif text-5xl leading-[0.88] tracking-[-0.045em] sm:text-6xl">Featured<br />Projects</h2>
-            <p className="mt-6 max-w-xs text-sm leading-6 text-[#5d6257]">We turn ideas into powerful digital experiences. Explore some of our recent projects that showcase our creativity, technical expertise, and commitment to delivering real business value.</p>
-            <p className="mt-10 max-w-xs -rotate-6 font-serif text-2xl italic leading-6 text-[#1c5b4e]">Ideas. Design. Code. Impact.</p>
+            <h2 className="max-w-sm font-serif text-5xl leading-[0.88] tracking-[-0.045em] sm:text-6xl">Selected work</h2>
+            <p className="mt-6 max-w-xs text-sm leading-6 text-[#5d6257]">Five recent sites, live and clickable. Each was built around a specific goal: memberships, listings, bookings, or sales.</p>
             <div className="mt-6 h-px w-40 rotate-[-8deg] bg-[#1c5b4e]" />
           </div>
 
           {featuredProject && <a href={featuredProject.url} target="_blank" rel="noopener noreferrer" className="group grid min-w-0 overflow-hidden rounded-xl border border-[#ddd6c8] bg-[#fbf9f3] shadow-[0_8px_30px_rgba(67,61,46,0.06)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_18px_38px_rgba(67,61,46,0.13)] lg:grid-cols-[0.72fr_1.28fr]">
-            <div className="flex flex-col justify-between p-6 sm:p-8"><div><span className="inline-flex rounded-full bg-[#e8e3d6] px-3 py-1 text-[9px] font-semibold uppercase tracking-[0.14em] text-[#426853]">Fitness Experience</span><h3 className="mt-5 font-serif text-4xl tracking-[-0.035em] text-[#26312d]">{featuredProject.title}</h3><p className="mt-4 text-sm leading-6 text-[#607568]">{featuredProject.description}</p><div className="mt-5 flex flex-wrap gap-2">{featuredProject.tech.split(",").map((tech) => <span key={tech} className="rounded-full bg-[#eee9dd] px-2.5 py-1 text-[9px] font-medium text-[#6c7065]">{tech.trim()}</span>)}</div></div><span className="mt-7 inline-flex w-fit items-center gap-2 rounded-full bg-[#1c5b4e] px-5 py-3 text-xs font-semibold text-white transition-colors group-hover:bg-[#16483e]">View Project <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span></div><div className="relative min-h-72 lg:min-h-[22rem]"><ProjectImage projectId={featuredProject.id} title={featuredProject.title} featured /><span className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-[#f8f5eb]/90 text-[#1c5b4e]"><ArrowUpRight className="h-4 w-4" /></span></div>
+            <div className="flex flex-col justify-between p-6 sm:p-8"><div><span className="inline-flex rounded-full bg-[#e8e3d6] px-3 py-1 text-[9px] font-semibold uppercase tracking-[0.14em] text-[#426853]">Fitness Experience</span><h3 className="mt-5 font-serif text-4xl tracking-[-0.035em] text-[#26312d]">{featuredProject.title}</h3><p className="mt-4 text-sm leading-6 text-[#607568]">{featuredProject.description}</p><div className="mt-5 flex flex-wrap gap-2">{featuredProject.tech.split(",").map((tech) => <span key={tech} className="rounded-full bg-[#eee9dd] px-2.5 py-1 text-[9px] font-medium text-[#6c7065]">{tech.trim()}</span>)}</div></div><span className="mt-7 inline-flex w-fit items-center gap-2 rounded-full bg-[#1c5b4e] px-5 py-3 text-xs font-semibold text-white transition-colors group-hover:bg-[#16483e]">View live site <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></span></div><div className="relative min-h-72 lg:min-h-[22rem]"><ProjectImage projectId={featuredProject.id} title={featuredProject.title} featured /><span className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-[#f8f5eb]/90 text-[#1c5b4e]"><ArrowUpRight className="h-4 w-4" /></span></div>
           </a>}
         </div>
 
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{cards.map((project) => <ProjectCard key={project.id} project={project} />)}</div>
 
-        <div className="mt-10 flex items-center justify-center gap-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#77786d]"><span className="h-px w-10 bg-[#c9c1b1]" />5 Projects<span className="h-px w-10 bg-[#c9c1b1]" /></div>
+        <div className="mt-10 flex items-center justify-center gap-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#77786d]"><span className="h-px w-10 bg-[#c9c1b1]" />5 live projects<span className="h-px w-10 bg-[#c9c1b1]" /></div>
 
         {/*
         <div className="mt-20 border-t border-[#d8d1c2] pt-12">

@@ -1,57 +1,36 @@
 {
   "meta": {
-    "siteTitle": "Orvexa Systems | Web Development & Digital Solutions",
-    "siteDescription": "Orvexa Systems builds modern websites, custom web applications, Shopify stores, Streamlit dashboards, AI automation systems, and digital solutions for businesses across Pakistan, India, Bangladesh, the UAE, and the Middle East.",
+    "siteTitle": "Orvexa Systems | Websites, Web Apps & Shopify Stores",
+    "siteDescription": "Orvexa Systems builds websites, web apps, Shopify stores, and automation for businesses in South Asia and the Middle East. Get a free quote.",
     "siteUrl": "https://orvexasystems.site",
     "ogImage": "/og-image.jpg",
-    "keywords": [
-      "Orvexa Systems",
-      "Orvexa Systems Pakistan",
-      "web development India",
-      "web development Bangladesh",
-      "web development UAE",
-      "web development Middle East",
-      "web development Pakistan",
-      "website development Pakistan",
-      "web design Pakistan",
-      "web application development Pakistan",
-      "custom software development Pakistan",
-      "Shopify development Pakistan",
-      "Streamlit development Pakistan",
-      "React development Pakistan",
-      "Next.js development Pakistan",
-      "Django development Pakistan",
-      "AI automation Pakistan",
-      "SEO services Pakistan",
-      "website maintenance Pakistan"
-    ],
     "locale": "en_PK",
     "twitterHandle": ""
   },
   "profile": {
     "name": "Orvexa Systems",
     "title": "Web Development & Digital Solutions Agency",
-    "tagline": "We build digital systems that move businesses forward.",
+    "tagline": "Websites, apps, and automation for growing businesses.",
     "description": "Orvexa Systems is a Pakistan-based digital solutions team serving businesses across Pakistan, India, Bangladesh, the UAE, and the Middle East. We build modern websites, custom web applications, Shopify stores, Streamlit solutions, and AI-powered automation designed around real business needs.",
-    "ctaText": "Get a Quote on WhatsApp",
+    "ctaText": "Get a free quote on WhatsApp",
     "ctaUrl": "https://wa.me/923398867672?text=Hi%2C%20I%20would%20like%20to%20get%20a%20quote",
     "avatar": "/logo.jpeg",
     "stats": [
       {
-        "value": "74+",
-        "label": "Clients Served"
+        "value": "46+",
+        "label": "Clients served"
       },
       {
-        "value": "68+",
-        "label": "Projects Completed"
+        "value": "32+",
+        "label": "Projects completed"
       },
       {
-        "value": "4+",
-        "label": "Years of Experience"
+        "value": "3+",
+        "label": "Years in business"
       },
       {
         "value": "7",
-        "label": "Team Members"
+        "label": "People on the team"
       }
     ]
   },
@@ -59,43 +38,43 @@
     {
       "id": "website-development",
       "title": "Website Development",
-      "description": "We design and build modern, responsive websites that help businesses establish a professional and credible online presence.",
+      "description": "We build fast websites that work on any screen and make it easy for customers to find you, trust you, and contact you.",
       "icon": "layout",
       "features": [
         "Business websites",
-        "Portfolio websites",
+        "Portfolio sites",
         "Landing pages",
-        "Responsive design"
+        "Mobile-first design"
       ]
     },
     {
       "id": "web-app-development",
       "title": "Web Application Development",
-      "description": "We build custom web applications and business tools designed around your workflow, requirements, and users.",
+      "description": "We build web apps around how your team already works: order tracking, customer records, billing, and internal dashboards.",
       "icon": "code",
       "features": [
-        "Custom web applications",
+        "Custom web apps",
         "Business dashboards",
-        "Streamlit applications",
-        "Backend development"
+        "Streamlit apps",
+        "Backend and databases"
       ]
     },
     {
       "id": "excel-data-services",
       "title": "Excel & Data Services",
-      "description": "We clean, organize, and structure your raw CSV or Excel data into clear, usable formats.",
+      "description": "Send us your messy spreadsheets. We return clean, consistent files and, if you want, a dashboard that shows what the numbers say.",
       "icon": "database",
       "features": [
-        "Data cleaning & sorting",
-        "Dashboards & visual reports",
-        "CSV/Excel formatting",
-        "Duplicate & error removal"
+        "Data cleaning and sorting",
+        "Dashboards and visual reports",
+        "CSV and Excel formatting",
+        "Duplicate and error removal"
       ]
     },
     {
       "id": "logo-banner-design",
       "title": "Logo & Banner Design",
-      "description": "We design clean, professional logos and banners to give your brand a consistent visual identity.",
+      "description": "We design your logo, banners, and social graphics as one set, so your brand looks the same everywhere.",
       "icon": "sparkles",
       "features": [
         "Logo design",
@@ -107,31 +86,31 @@
     {
       "id": "shopify-development",
       "title": "Shopify Store Development",
-      "description": "We create professional Shopify stores that are easy to manage and designed to provide a smooth shopping experience.",
+      "description": "We set up Shopify stores that are simple to run and simple to buy from: products loaded, theme customized, checkout tested.",
       "icon": "shopping-cart",
       "features": [
-        "Shopify store setup",
+        "Store setup",
         "Theme customization",
-        "Product store setup",
-        "Store optimization"
+        "Product and collection setup",
+        "Speed and checkout improvements"
       ]
     },
     {
       "id": "ai-automation",
       "title": "AI Automation",
-      "description": "We help businesses reduce repetitive work by building practical automation and AI-powered workflows around their processes.",
+      "description": "We find the repetitive tasks that eat your team's week, like copying data, sending reminders, and sorting inquiries, and automate them.",
       "icon": "zap",
       "features": [
         "Workflow automation",
-        "AI-powered solutions",
-        "Process optimization",
+        "AI-powered tools",
+        "Process improvement",
         "Custom integrations"
       ]
     },
     {
       "id": "seo-maintenance",
       "title": "SEO & Website Maintenance",
-      "description": "We help businesses keep their websites updated, maintained, and better prepared for search visibility.",
+      "description": "We keep your site secure, up to date, and easier to find on Google. We handle updates, bug fixes, and basic SEO.",
       "icon": "search",
       "features": [
         "Basic SEO improvements",
@@ -250,7 +229,7 @@
     {
       "id": "crown-properties",
       "title": "Crown Properties",
-      "description": "A professional real estate website featuring property listings, detailed property pages, company information, services, and contact functionality.",
+      "description": "A real estate website with property listings, a detail page for each property, and a contact form.",
       "category": "Real Estate Web Development",
       "tech": "React, TypeScript, React Router, Supabase",
       "url": "https://crownproperties.vercel.app/"
@@ -258,7 +237,7 @@
     {
       "id": "fort-gym",
       "title": "FORT Gym",
-      "description": "A premium fitness club website presenting memberships, training facilities, coaches, recovery services, spa amenities, and customer testimonials.",
+      "description": "A website for a premium fitness club: memberships, training facilities, coaches, and spa and recovery services.",
       "category": "Fitness Web Development",
       "tech": "React and typescript framework",
       "url": "https://fort-beta.vercel.app/"
@@ -266,15 +245,15 @@
     {
       "id": "atlas-gym",
       "title": "Atlas Gym",
-      "description": "A modern gym website showcasing fitness facilities, membership plans, professional coaches, recovery experiences, testimonials, and location details.",
+      "description": "A website for a gym. Visitors compare membership plans, meet the coaches, see the recovery facilities, and find the location.",
       "category": "Fitness Web Development",
-      "tech": "React, TypeScript and Lucide React",
+      "tech": "React, TypeScript, Lucide React",
       "url": "https://atlasgym-delta.vercel.app/"
     },
     {
       "id": "aura-salon-and-spa",
       "title": "Aura Salon & Spa",
-      "description": "An elegant salon and spa website featuring beauty services, pricing, team profiles, gallery sections, testimonials, booking, FAQs, and contact information.",
+      "description": "A salon and spa website with service pricing, team profiles, a photo gallery, online booking, and FAQs.",
       "category": "Beauty & Wellness Web Development",
       "tech": "Framer Motion",
       "url": "https://aura-salonandspa.vercel.app/"
@@ -282,9 +261,9 @@
     {
       "id": "the-formula-lab",
       "title": "The Formula Lab",
-      "description": "A full-featured e-commerce website for browsing products, viewing product details, managing a shopping cart, and administering products and users.",
+      "description": "An online store with product pages, a shopping cart, and an admin panel for managing products and users.",
       "category": "E-commerce Web Development",
-      "tech": "React Query and v0",
+      "tech": "React Query",
       "url": "https://www.theformulalab.store/"
     }
   ],
@@ -458,8 +437,9 @@
     "Pakistan",
     "India",
     "Bangladesh",
-    "UAE",
-    "Middle East"
+    "the UAE",
+    "the Middle East",
+    "remote clients worldwide"
   ],
   "contact": {
     "email": "orvexasystems.site@gmail.com",
@@ -473,35 +453,35 @@
   "faq": [
     {
       "question": "What services does Orvexa Systems offer?",
-      "answer": "We build business websites, custom web applications, Shopify stores, Streamlit applications and dashboards. We also offer AI automation, SEO improvements, and website maintenance."
+      "answer": "We build business websites, custom web apps, Shopify stores, and Streamlit dashboards. We also offer AI automation, data cleanup in Excel and CSV, logo and banner design, SEO, and website maintenance."
     },
     {
       "question": "Who do you work with?",
-      "answer": "We work with businesses and individuals across Pakistan, India, Bangladesh, the UAE, and the Middle East who need a professional website, e-commerce store, custom web application, or other digital solution."
+      "answer": "Local businesses, startups, and independent professionals who need a website, an online store, or software to run their work. Not sure if you fit? Ask us on WhatsApp."
     },
     {
       "question": "How do I get a quote for my project?",
-      "answer": "You can contact us on WhatsApp and tell us about your project. After understanding your requirements, we will discuss the scope and provide a custom quote."
+      "answer": "Message us on WhatsApp or fill in the contact form with a short description of what you need. We reply within 24 hours with questions or a quote."
     },
     {
       "question": "How long does a project usually take?",
-      "answer": "The timeline depends on the type and complexity of the project. Smaller websites can take less time, while custom web applications and larger systems may require a longer development process."
+      "answer": "A landing page usually takes 3 to 5 days, a business website 1 to 3 weeks, and a custom web app 3 to 8 weeks, depending on scope. We confirm the delivery date in writing before we start."
     },
     {
       "question": "Do you offer support after a website is launched?",
-      "answer": "Yes. We can provide website maintenance, updates, bug fixes, and other support based on your project's requirements."
+      "answer": "Yes. After launch we handle bug fixes, updates, and basic SEO. Message us on WhatsApp any time and we reply within 24 hours."
     },
     {
       "question": "What makes Orvexa Systems different?",
-      "answer": "We combine practical business understanding with clean design, reliable development, and clear communication throughout the project."
+      "answer": "You get a written plan, a delivery date, and a price before we start, and we only build what your business needs. That means fewer surprises and no wasted features."
     },
     {
       "question": "Can you build both websites and custom applications?",
-      "answer": "Yes. We build business websites, e-commerce stores, dashboards, custom web applications, and digital tools based on your requirements."
+      "answer": "Yes. Many clients start with a website and add a booking system, dashboard, or online store later. You keep working with the same team."
     },
     {
       "question": "Which regions do you serve?",
-      "answer": "We work with clients across Pakistan, India, Bangladesh, the UAE, the Middle East, and other regions through remote collaboration."
+      "answer": "We work remotely with clients in Pakistan, India, Bangladesh, the UAE, and the Middle East, and we take projects from other regions too. We meet by WhatsApp, phone, or video."
     }
   ]
 }

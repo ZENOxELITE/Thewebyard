@@ -51,8 +51,7 @@ export function FAQ({ data }: FAQProps) {
           <div className="lg:sticky lg:top-24">
             <span className="mb-4 inline-flex rounded-full bg-[#dfd9c9] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#5d6257]">FAQ</span>
             <h2 className="max-w-md font-serif text-4xl leading-[0.92] tracking-[-0.04em] sm:text-5xl lg:text-6xl">Frequently Asked<br />Questions</h2>
-            <p className="mt-5 max-w-sm text-sm leading-6 text-[#5d6257] sm:text-base">Find quick answers to the most common questions about our services, process, pricing, and more. If you don&apos;t see what you&apos;re looking for, feel free to reach out — we&apos;re here to help!</p>
-            <p className="mt-8 max-w-xs -rotate-6 font-serif text-2xl italic leading-6 text-[#1c5b4e]">Got a question?<br />We&apos;ve got answers.</p>
+            <p className="mt-5 max-w-sm text-sm leading-6 text-[#5d6257] sm:text-base">Answers to what clients ask us most. Something missing? Message us and we&apos;ll reply directly.</p>
             <FAQIllustration />
           </div>
 
@@ -78,8 +77,8 @@ export function FAQ({ data }: FAQProps) {
           <div className="absolute bottom-[-3rem] right-5 h-32 w-6 rotate-[30deg] rounded-full bg-[#507a5e]/70" />
           <div className="absolute bottom-[-2rem] right-16 h-28 w-5 rotate-[55deg] rounded-full bg-[#87a486]/70" />
           <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between sm:gap-10">
-            <div className="max-w-lg"><span className="inline-flex items-center gap-2 text-[9px] font-semibold uppercase tracking-[0.16em] text-[#47705b]"><span className="h-1.5 w-1.5 rounded-full bg-[#1c5b4e]" /> Still have questions?</span><h3 className="mt-3 font-serif text-3xl leading-none tracking-[-0.03em] text-[#26312d] sm:text-4xl">Let&apos;s Talk. We&apos;re Here to Help.</h3><p className="mt-3 text-sm leading-5 text-[#6c7065]">Can&apos;t find what you&apos;re looking for? Reach out to us directly and we&apos;ll be happy to answer your questions or discuss your project.</p></div>
-            <a href={data.profile.ctaUrl} target="_blank" rel="noopener noreferrer" className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#1c5b4e] px-5 py-3 text-xs font-semibold text-white transition-colors hover:bg-[#16483e]">Get a Quote on WhatsApp <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></a>
+            <div className="max-w-lg"><h3 className="mt-3 font-serif text-3xl leading-none tracking-[-0.03em] text-[#26312d] sm:text-4xl">Still deciding?</h3><p className="mt-3 text-sm leading-5 text-[#6c7065]">Tell us what you need on WhatsApp and we&apos;ll reply with a clear next step.</p></div>
+            <a href={data.profile.ctaUrl} target="_blank" rel="noopener noreferrer" className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#1c5b4e] px-5 py-3 text-xs font-semibold text-white transition-colors hover:bg-[#16483e]">Get a free quote on WhatsApp <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" /></a>
           </div>
         </div>
       </div>

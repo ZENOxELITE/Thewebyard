@@ -4,7 +4,7 @@ export interface PortfolioData {
     siteDescription: string
     siteUrl: string
     ogImage: string
-    keywords: string[]
+    keywords?: string[]
     locale: string
     twitterHandle: string
   }

@@ -7,7 +7,6 @@ import { Services } from "@/components/portfolio/services"
 import { Projects } from "@/components/portfolio/projects"
 // import { Expertise } from "@/components/portfolio/expertise"
 import { Philosophy } from "@/components/portfolio/philosophy"
-// import { Testimonials } from "@/components/portfolio/testimonials"
 import { FAQ } from "@/components/portfolio/faq"
 import { Contact } from "@/components/portfolio/contact"
 import { Footer } from "@/components/portfolio/footer"
@@ -18,7 +17,6 @@ const { meta, profile } = portfolioData
 export const metadata: Metadata = {
   title: meta.siteTitle,
   description: meta.siteDescription,
-  keywords: meta.keywords,
   authors: [{ name: profile.name }],
   creator: profile.name,
   metadataBase: new URL(meta.siteUrl),
@@ -73,7 +71,6 @@ export default function PortfolioPage() {
         <Projects data={portfolioData} />
         {/* <Expertise data={portfolioData} /> */}
         <Philosophy data={portfolioData} />
-        {/* <Testimonials data={portfolioData} /> */}
         <FAQ data={portfolioData} />
         <Contact data={portfolioData} />
         <Footer data={portfolioData} />

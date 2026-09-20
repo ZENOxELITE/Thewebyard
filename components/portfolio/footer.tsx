@@ -11,7 +11,6 @@ interface FooterProps {
 const quickLinks = [
   { href: "#projects", label: "Projects" },
   { href: "#expertise", label: "Expertise" },
-  { href: "#testimonials", label: "Testimonials" },
   { href: "#faq", label: "FAQ" },
   { href: "#contact", label: "Contact" },
 ]
@@ -66,8 +65,8 @@ export function Footer({ data }: FooterProps) {
           </div>
 
           <div className="md:pl-10">
-            <h4 className="mb-6 text-sm font-semibold text-[#135744]">Serving Clients In</h4>
-            <ul className="space-y-4">{targetRegions.slice(0, 6).map((region) => <li key={region} className="flex items-center gap-3 text-sm text-[#557569]"><MapPin className="h-4 w-4 shrink-0 text-[#1c5b4e]" />{region}</li>)}<li className="text-sm text-[#7a8b7d]">&amp; more regions worldwide</li></ul>
+            <h4 className="mb-6 text-sm font-semibold text-[#135744]">Where our clients are</h4>
+            <ul className="space-y-4">{targetRegions.map((region) => <li key={region} className="flex items-center gap-3 text-sm text-[#557569]"><MapPin className="h-4 w-4 shrink-0 text-[#1c5b4e]" />{region}</li>)}</ul>
           </div>
         </div>
 
