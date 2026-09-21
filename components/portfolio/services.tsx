@@ -8,14 +8,14 @@ interface ServicesProps {
 }
 
 const serviceImages: Record<string, string> = {
-  "website-development": "/services/Web-devlopment.png",
-  "web-app-development": "/services/Web-App.png",
-  "excel-data-services": "/services/excel-data.png",
-  "shopify-store": "/services/Shopify-store.png",
-  "logo-banner-design": "/services/Logo-design.png",
-  "shopify-development": "/services/Shopify-store.png",
-  "ai-automation": "/services/AI-Automation.png",
-  "seo-maintenance": "/services/seo.png",
+  "website-development": "/Services/Web-devlopment.png",
+  "web-app-development": "/Services/web-app.png",
+  "excel-data-services": "/Services/excel-data.png",
+  "shopify-store": "/Services/Shopify-store.png",
+  "logo-banner-design": "/Services/Logo-design.png",
+  "shopify-development": "/Services/Shopify-store.png",
+  "ai-automation": "/Services/AI-Automation.png",
+  "seo-maintenance": "/Services/seo.png",
 }
 
 export function Services({ data }: ServicesProps) {
