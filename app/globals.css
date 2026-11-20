@@ -3,80 +3,70 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+ * Orvexa — "Version E": light monochrome with fine line art.
+ * paper  — page background
+ * card   — white surfaces
+ * ink    — text, from strongest to faintest
+ * line   — hairline borders
+ * signal — the one loud colour, for primary actions only
+ */
 :root {
-  --background: oklch(0.97 0.012 75);
-  --foreground: oklch(0.27 0.018 75);
-  --card: oklch(0.995 0.006 75);
-  --card-foreground: oklch(0.27 0.018 75);
-  --popover: oklch(0.995 0.006 75);
-  --popover-foreground: oklch(0.27 0.018 75);
-  --primary: oklch(0.32 0.09 165);
-  --primary-foreground: oklch(0.97 0.012 75);
-  --secondary: oklch(0.93 0.025 75);
-  --secondary-foreground: oklch(0.27 0.018 75);
-  --muted: oklch(0.935 0.018 75);
-  --muted-foreground: oklch(0.48 0.018 75);
-  --accent: oklch(0.68 0.14 65);
-  --accent-foreground: oklch(0.25 0.06 155);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.98 0.01 75);
-  --border: oklch(0.87 0.025 75);
-  --input: oklch(0.87 0.025 75);
-  --ring: oklch(0.68 0.14 65);
-  --chart-1: oklch(0.32 0.09 165);
-  --chart-2: oklch(0.68 0.14 65);
-  --chart-3: oklch(0.48 0.08 150);
-  --chart-4: oklch(0.55 0.11 45);
-  --chart-5: oklch(0.72 0.1 90);
-  --radius: 0.5rem;
-  --sidebar: oklch(0.95 0.018 75);
-  --sidebar-foreground: oklch(0.27 0.018 75);
-  --sidebar-primary: oklch(0.32 0.09 165);
-  --sidebar-primary-foreground: oklch(0.97 0.012 75);
-  --sidebar-accent: oklch(0.90 0.035 75);
-  --sidebar-accent-foreground: oklch(0.27 0.018 75);
-  --sidebar-border: oklch(0.87 0.025 75);
-  --sidebar-ring: oklch(0.68 0.14 65);
-}
+  --paper: #efefea;
+  --paper-2: #f5f5f1;
+  --card-bg: #ffffff;
+  --chip: #e9e9e4;
+  --ink: #18181b;
+  --ink-2: #52525b;
+  --ink-3: #8a8a93;
+  --ink-soft: #6b6e78;
+  --line: #e2e2dc;
+  --line-strong: #d4d4cd;
+  --wire: #343b55;
+  --signal: #dc4128;
+  --signal-hover: #c43520;
 
-.dark {
-  --background: oklch(0.19 0.045 165);
-  --foreground: oklch(0.95 0.018 75);
-  --card: oklch(0.235 0.05 165);
-  --card-foreground: oklch(0.95 0.018 75);
-  --popover: oklch(0.235 0.05 165);
-  --popover-foreground: oklch(0.95 0.018 75);
-  --primary: oklch(0.73 0.13 65);
-  --primary-foreground: oklch(0.19 0.045 165);
-  --secondary: oklch(0.29 0.055 165);
-  --secondary-foreground: oklch(0.95 0.018 75);
-  --muted: oklch(0.29 0.055 165);
-  --muted-foreground: oklch(0.75 0.035 75);
-  --accent: oklch(0.73 0.13 65);
-  --accent-foreground: oklch(0.19 0.045 165);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.75 0.14 30);
-  --border: oklch(0.34 0.055 165);
-  --input: oklch(0.34 0.055 165);
-  --ring: oklch(0.73 0.13 65);
-  --chart-1: oklch(0.73 0.13 65);
-  --chart-2: oklch(0.55 0.1 150);
-  --chart-3: oklch(0.78 0.07 90);
-  --chart-4: oklch(0.62 0.09 45);
-  --chart-5: oklch(0.68 0.08 180);
-  --sidebar: oklch(0.16 0.04 165);
-  --sidebar-foreground: oklch(0.95 0.018 75);
-  --sidebar-primary: oklch(0.73 0.13 65);
-  --sidebar-primary-foreground: oklch(0.19 0.045 165);
-  --sidebar-accent: oklch(0.26 0.05 165);
-  --sidebar-accent-foreground: oklch(0.95 0.018 75);
-  --sidebar-border: oklch(0.34 0.055 165);
-  --sidebar-ring: oklch(0.73 0.13 65);
+  /* shadcn tokens, mapped onto the palette */
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: var(--card-bg);
+  --card-foreground: var(--ink);
+  --popover: var(--card-bg);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: #ffffff;
+  --secondary: var(--chip);
+  --secondary-foreground: var(--ink);
+  --muted: var(--paper-2);
+  --muted-foreground: var(--ink-3);
+  --accent: var(--signal);
+  --accent-foreground: #ffffff;
+  --destructive: var(--signal);
+  --destructive-foreground: #ffffff;
+  --border: var(--line);
+  --input: var(--line);
+  --ring: var(--ink-3);
+  --radius: 0.75rem;
 }
 
 @theme inline {
   --font-sans: var(--font-inter), 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-mono), 'JetBrains Mono', ui-monospace, monospace;
+
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-chip: var(--chip);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-wire: var(--wire);
+  --color-signal: var(--signal);
+  --color-signal-hover: var(--signal-hover);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -96,23 +86,10 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 }
 
 @layer base {
@@ -121,59 +98,78 @@
   }
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
   }
   body {
     @apply bg-background text-foreground;
   }
-}
-
-.article-card-image {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.article-card-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-}
-
-@keyframes testimonial-marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(calc(-100% - 1.5rem));
+  ::selection {
+    background: var(--signal);
+    color: #fff;
   }
 }
 
-.testimonial-marquee {
-  overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+/* ---------- Motion ---------- */
+
+/* Scroll reveal: elements start slightly low and transparent, then settle. */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+[data-reveal][data-visible="true"] {
+  opacity: 1;
+  transform: none;
 }
 
-.testimonial-marquee__track {
-  display: flex;
-  width: max-content;
-  animation: testimonial-marquee 38s linear infinite;
+/* Line art draws itself in, one stroke after another. */
+.wire-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: wire-draw 1.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+@keyframes wire-draw {
+  to { stroke-dashoffset: 0; }
 }
 
-.testimonial-marquee__group {
-  display: flex;
-  gap: 1.5rem;
-  padding-right: 1.5rem;
+/* Hero entrance */
+.rise {
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--rise-delay, 0ms);
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
 }
 
-.testimonial-marquee:hover .testimonial-marquee__track,
-.testimonial-marquee:focus-within .testimonial-marquee__track {
-  animation-play-state: paused;
+/* Built-with strip scrolls gently on small screens. */
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+@media (min-width: 640px) {
+  .marquee-track { animation: none; }
+}
+
+/* Typing dots in the WhatsApp mock */
+@keyframes typing {
+  0%, 60%, 100% { opacity: 0.25; transform: none; }
+  30% { opacity: 1; transform: translateY(-2px); }
+}
+.typing-dot {
+  animation: typing 1s infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .testimonial-marquee__track {
-    animation: none;
-  }
+  html { scroll-behavior: auto; }
+  [data-reveal] { opacity: 1; transform: none; transition: none; }
+  .wire-draw { animation: none; stroke-dashoffset: 0; }
+  .rise { animation: none; }
+  .marquee-track { animation: none; }
+  .typing-dot { animation: none; opacity: 0.6; }
 }

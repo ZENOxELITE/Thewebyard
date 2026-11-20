@@ -1,11 +1,18 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, JetBrains_Mono } from 'next/font/google'
+import { Inter, Inter_Tight, JetBrains_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { seo } from '@/lib/site-content'
 import './globals.css'
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+})
+
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  variable: "--font-display",
   display: "swap",
 })
 
@@ -16,9 +23,8 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Orvexa Systems | Websites, Web Apps & Shopify Stores',
-  description: 'Orvexa Systems builds websites, web apps, Shopify stores, and automation for businesses in South Asia and the Middle East. Get a free quote.',
-  generator: 'v0.app',
+  title: seo.title,
+  description: seo.description,
   icons: {
     icon: '/favicon.png',
     shortcut: '/favicon.png',
@@ -27,10 +33,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f8fafc' },
-    { media: '(prefers-color-scheme: dark)', color: '#0f172a' },
-  ],
+  themeColor: '#efefed',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -42,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${interTight.variable} ${jetbrainsMono.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />

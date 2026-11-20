@@ -1,15 +1,14 @@
 import { MetadataRoute } from "next"
-import portfolioData from "@/data/portfolio-data.json"
+import { company, isProductionDeploy } from "@/lib/site-content"
 
 export default function robots(): MetadataRoute.Robots {
-  const { meta } = portfolioData
-  const baseUrl = meta.siteUrl
+  // Preview deployments (e.g. preview.orvexasystems.site) must stay out of search results.
+  if (!isProductionDeploy) {
+    return { rules: { userAgent: "*", disallow: "/" } }
+  }
 
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-    },
-    sitemap: `${baseUrl}/sitemap.xml`,
+    rules: { userAgent: "*", allow: "/" },
+    sitemap: `${company.siteUrl}/sitemap.xml`,
   }
 }

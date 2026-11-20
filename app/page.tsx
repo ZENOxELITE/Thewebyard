@@ -1,80 +1,80 @@
 import type { Metadata } from "next"
-import portfolioData from "@/data/portfolio-data.json"
-import { Header } from "@/components/portfolio/header"
-import { Hero } from "@/components/portfolio/hero"
-// import { Stats } from "@/components/portfolio/stats"
-import { Services } from "@/components/portfolio/services"
-import { Projects } from "@/components/portfolio/projects"
-// import { Expertise } from "@/components/portfolio/expertise"
-import { Philosophy } from "@/components/portfolio/philosophy"
-import { FAQ } from "@/components/portfolio/faq"
-import { Contact } from "@/components/portfolio/contact"
-import { Footer } from "@/components/portfolio/footer"
-import { JsonLd } from "@/components/portfolio/json-ld"
-
-const { meta, profile } = portfolioData
+import { company, faq, isProductionDeploy, products, seo } from "@/lib/site-content"
+import { Header } from "@/components/site/header"
+import { Hero } from "@/components/site/hero"
+import { Intro } from "@/components/site/intro"
+import { HowItWorks } from "@/components/site/how-it-works"
+import { Products } from "@/components/site/products"
+import { Company } from "@/components/site/company"
+import { FAQ } from "@/components/site/faq"
+import { Demo } from "@/components/site/demo"
+import { Footer } from "@/components/site/footer"
 
 export const metadata: Metadata = {
-  title: meta.siteTitle,
-  description: meta.siteDescription,
-  authors: [{ name: profile.name }],
-  creator: profile.name,
-  metadataBase: new URL(meta.siteUrl),
-  alternates: {
-    canonical: meta.siteUrl,
-  },
+  title: seo.title,
+  description: seo.description,
+  metadataBase: new URL(company.siteUrl),
+  alternates: { canonical: company.siteUrl },
   openGraph: {
     type: "website",
-    locale: meta.locale,
-    url: meta.siteUrl,
-    title: meta.siteTitle,
-    description: meta.siteDescription,
-    siteName: profile.name,
-    images: [
-      {
-        url: meta.ogImage,
-        width: 1200,
-        height: 630,
-        alt: `${profile.name} - ${profile.title}`,
-      },
-    ],
+    locale: "en_PK",
+    url: company.siteUrl,
+    title: seo.title,
+    description: seo.description,
+    siteName: company.name,
   },
   twitter: {
     card: "summary_large_image",
-    title: meta.siteTitle,
-    description: meta.siteDescription,
-    creator: meta.twitterHandle,
-    images: [meta.ogImage],
+    title: seo.title,
+    description: seo.description,
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
+  robots: isProductionDeploy ? { index: true, follow: true } : { index: false, follow: false },
 }
 
-export default function PortfolioPage() {
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: company.name,
+    url: company.siteUrl,
+    email: company.email,
+    sameAs: [company.instagram],
+  },
+  ...products.map((p) => ({
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: p.name,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Android, Web",
+    description: p.body,
+    publisher: { "@type": "Organization", name: company.name },
+  })),
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  },
+]
+
+export default function HomePage() {
   return (
     <>
-      <JsonLd data={portfolioData} />
-      <main className="min-h-screen bg-background">
-        <Header data={portfolioData} />
-        <Hero data={portfolioData} />
-        {/* <Stats data={portfolioData} /> */}
-        <Services data={portfolioData} />
-        <Projects data={portfolioData} />
-        {/* <Expertise data={portfolioData} /> */}
-        <Philosophy data={portfolioData} />
-        <FAQ data={portfolioData} />
-        <Contact data={portfolioData} />
-        <Footer data={portfolioData} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <Header />
+      <main>
+        <Hero />
+        <Intro />
+        <HowItWorks />
+        <Products />
+        <Company />
+        <FAQ />
+        <Demo />
       </main>
+      <Footer />
     </>
   )
 }
