@@ -3,12 +3,12 @@
 import type { CSSProperties } from "react"
 import { hero, company } from "@/lib/site-content"
 import { cn } from "@/lib/utils"
-import { buttonStyles, Container, Eyebrow, Heading, LogoMark } from "./primitives"
+import { buttonStyles, Container, Eyebrow, Heading } from "./primitives"
 import { WireField, type WireBuilder } from "./wire-field"
 
 /*
  * The hero line bundle: lines enter from both edges, squeeze through two
- * pinch points, and sag into a cradle under the logo tile. Order flips at
+ * pinch points, and sag into a cradle in the middle. Order flips at
  * each pinch, so the highest line at the edge becomes the lowest in the middle.
  */
 const W = 1000
@@ -62,15 +62,9 @@ export function Hero() {
         </div>
       </Container>
 
-      {/* Line art with the logo tile resting in the cradle */}
+      {/* Line art */}
       <div className="relative mt-4 h-[200px] w-full sm:h-[280px] lg:h-[340px] 2xl:h-[400px]">
         <WireField count={64} viewBox={`0 0 ${W} 330`} build={buildHeroWire} className="absolute inset-0 h-full w-full" />
-        <div
-          style={rise(900).style}
-          className="rise absolute left-1/2 top-[63%] flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-2xl border border-line bg-white text-wire shadow-[0_10px_30px_rgba(52,59,85,0.18)] sm:h-14 sm:w-14"
-        >
-          <LogoMark className="h-5 w-5 sm:h-6 sm:w-6" />
-        </div>
       </div>
 
       {/* Built with */}

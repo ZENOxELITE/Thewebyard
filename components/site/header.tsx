@@ -5,15 +5,12 @@ import { Menu } from "lucide-react"
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { company, nav } from "@/lib/site-content"
 import { cn } from "@/lib/utils"
-import { buttonStyles, Container, LogoMark } from "./primitives"
+import { buttonStyles, Container } from "./primitives"
 
 function Brand() {
   return (
-    <a href="#top" className="flex items-center gap-2.5" aria-label={`${company.name} home`}>
-      <span className="flex h-8 w-8 items-center justify-center rounded-lg border border-line-strong bg-white text-ink">
-        <LogoMark className="h-4 w-4" />
-      </span>
-      <span className="font-display text-[17px] font-semibold tracking-tight text-ink">{company.short}</span>
+    <a href="#top" className="font-display text-lg font-semibold tracking-tight text-ink" aria-label={`${company.name} home`}>
+      {company.short}
     </a>
   )
 }

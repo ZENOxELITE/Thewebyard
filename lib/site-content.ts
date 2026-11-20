@@ -53,10 +53,10 @@ export const intro = {
   title: "What is Orvexa?",
   body: "A software company building focused, affordable products for local businesses — each one designed around how a single trade actually works, from the counter to the delivery route.",
   points: [
-    { label: "Ready-made apps for each trade", icon: "grid" },
-    { label: "Runs on any Android phone", icon: "phone" },
-    { label: "One monthly plan, set up for you", icon: "calendar" },
-  ] as const,
+    { label: "Ready-made apps for each trade" },
+    { label: "Runs on any Android phone" },
+    { label: "One monthly plan, set up for you" },
+  ],
 }
 
 export const howItWorks = {

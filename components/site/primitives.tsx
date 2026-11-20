@@ -58,15 +58,6 @@ export const buttonStyles = {
   outline: cn(pill, "border border-line-strong bg-white/50 px-5 py-3 text-ink hover:border-ink-3 hover:bg-white focus-visible:outline-ink"),
 }
 
-/** The Orvexa mark: a simple ring. */
-export function LogoMark({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
-      <circle cx="12" cy="12" r="7.5" fill="none" stroke="currentColor" strokeWidth="2.2" />
-    </svg>
-  )
-}
-
 /** True once the element has scrolled into view (and stays true). */
 export function useInView<T extends Element>(options: IntersectionObserverInit = { threshold: 0.25 }) {
   const ref = useRef<T>(null)

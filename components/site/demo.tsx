@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState, type FormEvent } from "react"
-import { CheckCircle2, Instagram, Mail, MessageCircle } from "lucide-react"
+import { CheckCircle2 } from "lucide-react"
 import { company, demo, products } from "@/lib/site-content"
 import { cn } from "@/lib/utils"
 import { buttonStyles, Container, Heading, Reveal, SELECT_PRODUCT_EVENT } from "./primitives"
@@ -62,9 +62,9 @@ export function Demo() {
   }
 
   const contacts = [
-    { icon: MessageCircle, label: `WhatsApp ${company.whatsappDisplay}`, href: company.whatsappUrl, external: true },
-    { icon: Mail, label: company.email, href: `mailto:${company.email}`, external: false },
-    { icon: Instagram, label: company.instagramHandle, href: company.instagram, external: true },
+    { label: `WhatsApp ${company.whatsappDisplay}`, href: company.whatsappUrl, external: true },
+    { label: company.email, href: `mailto:${company.email}`, external: false },
+    { label: `Instagram ${company.instagramHandle}`, href: company.instagram, external: true },
   ]
 
   return (
@@ -91,14 +91,13 @@ export function Demo() {
                 </Heading>
                 <p className="mt-4 max-w-xs text-sm leading-6 text-ink-2">{demo.body}</p>
                 <ul className="mt-6 space-y-3.5">
-                  {contacts.map(({ icon: Icon, label, href, external }) => (
+                  {contacts.map(({ label, href, external }) => (
                     <li key={label}>
                       <a
                         href={href}
                         {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                        className="group inline-flex items-center gap-2.5 rounded-md bg-white/80 pr-2 text-sm text-ink hover:text-signal"
+                        className="inline-flex rounded-md bg-white/80 pr-2 text-sm text-ink transition-colors hover:text-signal"
                       >
-                        <Icon className="h-4 w-4 text-ink-2 transition-colors group-hover:text-signal" strokeWidth={1.75} />
                         {label}
                       </a>
                     </li>
