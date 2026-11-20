@@ -125,10 +125,13 @@
   transform: none;
 }
 
-/* Line art draws itself in, one stroke after another. */
+/* Line art draws itself in, one stroke after another.
+   Paths use pathLength=1, but with non-scaling strokes the browser measures
+   dashes on screen, where a stretched line is longer than 1. A dash of 4
+   covers even a very wide screen, so the line always ends up complete. */
 .wire-draw {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
+  stroke-dasharray: 4 4;
+  stroke-dashoffset: 4;
   animation: wire-draw 1.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
 }
 @keyframes wire-draw {

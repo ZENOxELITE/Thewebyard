@@ -11,7 +11,7 @@ export function Intro() {
     <section id="about" className="py-16 sm:py-24">
       <Container>
         <SectionIntro eyebrow={intro.eyebrow} title={intro.title} body={intro.body} className="max-w-2xl" />
-        <ul className="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-3">
+        <ul className="mx-auto mt-10 grid max-w-5xl gap-3 sm:grid-cols-3 2xl:max-w-6xl">
           {intro.points.map((point, i) => {
             const Icon = icons[point.icon]
             return (

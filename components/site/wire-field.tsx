@@ -107,6 +107,8 @@ export function WireField({
             vectorEffect="non-scaling-stroke"
             className="wire-draw"
             style={{ animationDelay: `${i * drawStagger}ms` }}
+            // once drawn, drop the dash pattern so the line is a plain solid stroke
+            onAnimationEnd={(e) => e.currentTarget.classList.remove("wire-draw")}
           />
         )
       })}

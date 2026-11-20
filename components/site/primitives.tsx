@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, type ComponentProps, type CSSProperties, t
 import { cn } from "@/lib/utils"
 
 export function Container({ className, ...props }: ComponentProps<"div">) {
-  return <div className={cn("mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8", className)} {...props} />
+  return <div className={cn("mx-auto w-full max-w-[90rem] px-4 sm:px-6 lg:px-10 2xl:px-14", className)} {...props} />
 }
 
 /** Pill label with a dot, used above every section heading. */
@@ -44,8 +44,8 @@ export function SectionIntro({
   return (
     <Reveal className={cn("mx-auto max-w-xl text-center", className)}>
       <Eyebrow>{eyebrow}</Eyebrow>
-      <Heading className="mt-4 text-4xl leading-[1.05] sm:text-5xl">{title}</Heading>
-      {body && <p className="mt-4 text-[15px] leading-7 text-ink-2">{body}</p>}
+      <Heading className="mt-4 text-4xl leading-[1.05] sm:text-5xl 2xl:text-6xl">{title}</Heading>
+      {body && <p className="mt-4 text-[15px] leading-7 text-ink-2 2xl:text-base">{body}</p>}
     </Reveal>
   )
 }
@@ -58,12 +58,11 @@ export const buttonStyles = {
   outline: cn(pill, "border border-line-strong bg-white/50 px-5 py-3 text-ink hover:border-ink-3 hover:bg-white focus-visible:outline-ink"),
 }
 
-/** The Orvexa mark: a ring split by a vertical stroke. */
+/** The Orvexa mark: a simple ring. */
 export function LogoMark({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
       <circle cx="12" cy="12" r="7.5" fill="none" stroke="currentColor" strokeWidth="2.2" />
-      <path d="M12 4.5v15" stroke="currentColor" strokeWidth="2.2" />
     </svg>
   )
 }

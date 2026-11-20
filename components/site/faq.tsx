@@ -10,7 +10,7 @@ export function FAQ() {
     <section id="faq" className="py-16 sm:py-24">
       <Container>
         <SectionIntro eyebrow={faq.eyebrow} title={faq.title} />
-        <AccordionPrimitive.Root type="single" collapsible className="mx-auto mt-10 max-w-2xl space-y-2">
+        <AccordionPrimitive.Root type="single" collapsible className="mx-auto mt-10 max-w-3xl space-y-2">
           {faq.items.map((item, i) => (
             <Reveal key={item.q} delay={i * 60}>
               <AccordionPrimitive.Item

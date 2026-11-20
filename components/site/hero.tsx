@@ -41,7 +41,7 @@ export function Hero() {
         <div {...rise(0)}>
           <Eyebrow className="bg-white">{hero.eyebrow}</Eyebrow>
         </div>
-        <Heading as="h1" className="mx-auto mt-5 max-w-3xl text-[2.75rem] leading-[0.98] sm:text-6xl lg:text-[4.25rem]">
+        <Heading as="h1" className="mx-auto mt-5 max-w-5xl text-[2.75rem] leading-[0.98] sm:text-6xl lg:text-[4.5rem] 2xl:text-[5.5rem]">
           <span style={rise(80).style} className="rise block">
             {hero.titleDark}
           </span>
@@ -49,7 +49,7 @@ export function Hero() {
             {hero.titleLight}
           </span>
         </Heading>
-        <p style={rise(240).style} className="rise mx-auto mt-5 max-w-md text-[15px] leading-7 text-ink-2 sm:max-w-lg">
+        <p style={rise(240).style} className="rise mx-auto mt-5 max-w-md text-[15px] leading-7 text-ink-2 sm:max-w-lg 2xl:max-w-xl 2xl:text-lg">
           {hero.body}
         </p>
         <div style={rise(320).style} className="rise mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -63,7 +63,7 @@ export function Hero() {
       </Container>
 
       {/* Line art with the logo tile resting in the cradle */}
-      <div className="relative mx-auto mt-4 h-[200px] w-full max-w-[1400px] sm:h-[280px] lg:h-[330px]">
+      <div className="relative mt-4 h-[200px] w-full sm:h-[280px] lg:h-[340px] 2xl:h-[400px]">
         <WireField count={64} viewBox={`0 0 ${W} 330`} build={buildHeroWire} className="absolute inset-0 h-full w-full" />
         <div
           style={rise(900).style}
